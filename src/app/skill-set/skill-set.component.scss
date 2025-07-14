@@ -1,0 +1,44 @@
+.skill-container {
+  background: linear-gradient(to bottom right, #5988ff, #5988ff, #0043f0);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  padding-bottom: 96px;
+  padding-top: 96px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.icon-unit {
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  > img {
+    height: 75px;
+    width: auto;
+  }
+  > span {
+    color: white;
+  }
+}
+
+h1 {
+  color: white !important;
+  text-align: center;
+  margin-bottom: 64px;
+}

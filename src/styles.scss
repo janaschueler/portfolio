@@ -1,1 +1,171 @@
 /* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: min(100%, 1440px);
+  margin-inline: auto;
+}
+
+body,
+.mat-typography,
+.mat-body-large,
+.mat-typography .mat-body-large {
+  font: 200 1rem / 1.5rem "Montserrat", sans-serif !important;
+}
+
+a {
+  font: 200 1rem / 1.5rem "Montserrat", sans-serif !important;
+  color: #5988ff;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Baloo 2" !important;
+  font-weight: bold !important;
+  color: #5988ff !important;
+  font-size: 36px !important;
+}
+
+h1 {
+  font-size: 80px !important;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "Montserrat" !important;
+  font-weight: 300 !important;
+  color: #5988ff !important;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 18px !important;
+}
+
+h5 {
+  font-size: 18px !important;
+  font-weight: bold;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn {
+  color: #5988ff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #5988ff;
+  padding: 12px 24px 12px 24px;
+  margin-top: auto;
+  width: fit-content;
+}
+
+
+
+
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/assets/fonts/Baloo2-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Baloo2-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/assets/fonts/Baloo2-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Baloo2-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("/assets/fonts/Baloo2-ExtraBold.woff2") format("woff2"),
+    url("/assets/fonts/Baloo2-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Light.woff2") format("woff2"),
+    url("/assets/fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/Montserrat-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Light.woff2") format("woff2"),
+    url("/assets/fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-ExtraLight.woff2") format("woff2"),
+    url("/assets/fonts/Poppins-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

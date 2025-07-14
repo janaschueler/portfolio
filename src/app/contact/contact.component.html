@@ -1,0 +1,51 @@
+<div class="contact-container">
+    
+  <h1>Contact</h1>
+  <div class="main-container">
+    <div class="content-container">
+      <h3>Got a problem to solve?</h3>
+      <p>
+        I’m a frontend developer passionate about clean code, accessibility, and
+        user-centered design. Let’s build something valuable together!
+      </p>
+      <p class="blue">Need a frontend developer? <b>contact me!</b></p>
+    </div>
+    <div class="form-container">
+      <form class="form" [formGroup]="form" (ngSubmit)="sendMail($event)">
+        <mat-form-field>
+          <mat-label>Your name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Your email</mat-label>
+          <input
+            matInput
+            formControlName="email"
+            placeholder="pat@example.com"
+          />
+          <mat-error
+            *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+          >
+            {{ errorMessage() }}
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Your message</mat-label>
+          <textarea matInput formControlName="message"></textarea>
+        </mat-form-field>
+
+        <mat-checkbox formControlName="accept" class="margin">
+          I agree to the processing of my data as stated in the privacy policy.
+        </mat-checkbox>
+
+        <div class="button-wrapper">
+          <button class="btn" type="submit" [disabled]="form.invalid">
+            Say hello &#58;&#41;
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
