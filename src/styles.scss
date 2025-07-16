@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
 *,
 *::before,
 *::after {
@@ -28,16 +28,20 @@ body {
   margin: 0;
 }
 
+
 h1,
 h3 {
   font-family: "Baloo 2" !important;
   font-weight: bold !important;
   color: #5988ff !important;
-  font-size: 36px !important;
 }
 
 h1 {
-  font-size: 80px !important;
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 36px;
 }
 
 h2,
@@ -53,32 +57,126 @@ h2 {
 }
 
 h4 {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 18px !important;
+  font-size: 18px;
   font-weight: bold;
   margin: 0 !important;
   padding: 0 !important;
 }
 
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 800px), (max-height: 550px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 700px), (max-height: 450px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 600px), (max-height: 400px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-height: 450px) {
+  h2 {
+    font-size: 16px;
+  }
+}
+
+.span {
+  font: 200 1rem / 1.5rem "Montserrat", sans-serif;
+}
+
 .btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   color: #5988ff;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 300;
   border-radius: 10px;
-  background-color: transparent;
   border: 1px solid #5988ff;
-  padding: 12px 24px 12px 24px;
-  margin-top: auto;
+  background-color: transparent;
+  padding: 12px 24px;
   width: fit-content;
+  transition: transform 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(135deg, #5988ff, #5988ff, #0043f0);
+    transform: translate(-100%, -100%);
+    z-index: -1;
+    border-radius: inherit;
+    transition: transform 0.15s ease;
+  }
+
+  &:not(:disabled):hover {
+    transform: scale(1.1);
+    color: white;
+    border: none;
+
+    &::before {
+      transform: translate(0, 0);
+    }
+  }
 }
 
-
-
-
+.btn-blue {
+  position: relative;
+  border: 1px solid #5988ff;
+  overflow: hidden;
+  z-index: 1;
+  color: white;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 10px;
+  padding: 12px 24px;
+  width: fit-content;
+  transition: transform 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5988ff, #5988ff, #0043f0);
+}
 
 @font-face {
   font-family: "Baloo 2";
@@ -168,4 +266,29 @@ h5 {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 558px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 100%;
+  }
 }

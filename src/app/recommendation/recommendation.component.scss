@@ -1,7 +1,6 @@
 .recommendation-container {
   background: linear-gradient(to bottom right, #5988ff, #5988ff, #0043f0);
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9,6 +8,8 @@
   min-width: 300px;
   padding-bottom: 96px;
   padding-top: 96px;
+  padding-left: 2%;
+  padding-right: 2%;
   justify-content: center;
   align-items: center;
 }
@@ -59,3 +60,71 @@ h4 {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 550px) {
+  h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+  @media (max-width: 550px) {
+    .testimonial-mobile-container {
+      display: block;
+      width: 100%;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+
+    .testimonial-carousel {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .testimonial-carousel .testimonial-unit {
+      display: none;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .testimonial-carousel .testimonial-unit.active {
+      display: block;
+    }
+
+    .testimonial-carousel .testimonial-name h5 {
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .testimonial-carousel .testimonial-name span {
+      font-size: 13px;
+      color: #ccc;
+    }
+
+    .testimonial-carousel .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      gap: 16px;
+    }
+
+    .testimonial-carousel .button-container button {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      flex: 1;
+    }
+  }
+

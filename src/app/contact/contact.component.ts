@@ -3,6 +3,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   inject,
+  PLATFORM_ID,
   signal,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -18,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { merge } from 'rxjs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CommonModule } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
@@ -88,5 +90,28 @@ export class ContactComponent {
       .catch((error) => {
         console.error('Form error:', error);
       });
+  }
+
+  private platformId = inject(PLATFORM_ID);
+
+  toTop(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+  ngOnInit(): void {
+    this.form = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required],
+      accept: [false, Validators.requiredTrue],
+    });
+
+    // Log bei jedem Statuswechsel
+    this.form.get('accept')?.statusChanges.subscribe(() => {
+      console.log('accept status:', this.form.get('accept')?.status);
+      console.log('invalid:', this.form.get('accept')?.invalid);
+      console.log('touched:', this.form.get('accept')?.touched);
+    });
   }
 }

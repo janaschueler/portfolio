@@ -5,3 +5,10 @@
   align-items: flex-end;
   text-align: right;
 }
+
+@media (max-width: 550px) {
+  .content-container {
+    align-items: center;
+    text-align: center;
+  }
+}

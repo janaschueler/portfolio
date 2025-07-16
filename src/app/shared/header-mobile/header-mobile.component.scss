@@ -1,10 +1,112 @@
-.logo-container {
-  display: flex;
-  justify-content: flex-start;
+.mobile-nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent !important;
 }
 
-.nav-container {
+.mobile-side-nav-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(234, 240, 255, 0.8)
+  ) !important;
+  color: #5988ff;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.sidenav-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 16px;
+}
+
+.mat-sidenav-content {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  gap: 24px;
 }
+
+.mat-toolbar {
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background-color: transparent !important;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  > img {
+    width: 56px;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.mat-drawer-transition .mat-drawer-backdrop {
+  height: 100vh;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  > a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #5988ff;
+  }
+}
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  > a {
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+  }
+}
+
+.close-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  background-image: url("/assets/icons/close-tbn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url("/assets/icons/close-btn-hover.svg");
+  }
+}
+

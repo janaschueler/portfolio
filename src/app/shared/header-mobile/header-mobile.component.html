@@ -1,30 +1,42 @@
-<mat-toolbar>
-  <div class="logo-container">
-    <img src="/assets/icons/logo.svg" alt="" />
-  </div>
-  <div class="nav-container">
-    <button
-      matIconButton
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>My App</span>
-    <span class="example-spacer"></span>
-    <button
-      matIconButton
-      class="example-icon favorite-icon"
-      aria-label="Example icon-button with heart icon"
-    >
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button
-      matIconButton
-      class="example-icon"
-      aria-label="Example icon-button with share icon"
-    >
-      <mat-icon>share</mat-icon>
-    </button>
-  </div>
-</mat-toolbar>
+<mat-sidenav-container class="mobile-nav-container">
+  <mat-sidenav #sidenav mode="over" class="mobile-side-nav-content">
+    <div class="sidenav-layout">
+      <div class="close-container">
+        <button
+          class="close-btn"
+          mat-icon-button
+          (click)="sidenav.close()"
+          aria-label="Close navigation"
+        ></button>
+      </div>
+
+      <div class="mobile-nav-list">
+        <a href="#about" (click)="sidenav.close()">About me</a>
+        <a href="#skillset " (click)="sidenav.close()">Skill set</a>
+        <a href="#work" (click)="sidenav.close()">My work</a>
+        <div class="language-switcher">
+          <a href="#de" (click)="sidenav.close()">DE</a>
+          <span>/</span>
+          <a href="#en" (click)="sidenav.close()">EN</a>
+        </div>
+      </div>
+
+      <div></div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <div class="logo-container">
+        <img src="/assets/icons/logo.svg" alt="Logo" />
+      </div>
+      <button
+        mat-icon-button
+        (click)="sidenav.toggle()"
+        aria-label="Open navigation"
+      >
+        <img src="/assets/icons/burger-menu.png" alt="burger menu" />
+      </button>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

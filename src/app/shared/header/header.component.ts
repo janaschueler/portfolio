@@ -10,4 +10,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  activeLink = '';
+
+  setActive(event: Event, link: string): void {
+    event.preventDefault();
+    this.activeLink = link;
+
+    const el = document.querySelector(link);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+}

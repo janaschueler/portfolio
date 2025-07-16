@@ -1,4 +1,4 @@
-<div class="about-container">
+<div id="about" class="about-container">
   <img
     class="ellipse-1"
     src="/assets/bubble/about-ellipse1.png"
@@ -17,15 +17,22 @@
       </div>
       <div class="preference-container">
         <div class="preference-unit">
-          <img src="/assets/icons/pin.svg" alt="icon suitcase" />
-          <span>loction in Münster</span>
+          <div class="icon pin-icon"></div>
+          <span>location in Münster</span>
         </div>
         <div class="preference-unit">
-          <img src="/assets/icons/remote-work.svg" alt="icon laptop and wifi" />
+          <div class="remote-icon-wrapper">
+            <div class="remote-icon"></div>
+          </div>
           <span>open to work remote</span>
         </div>
+
         <div class="preference-unit">
-          <img src="/assets/icons/travel.svg" alt="icon suitcase" />
+          <img
+            class="travel-img"
+            src="/assets/icons/travel.svg"
+            alt="icon suitcase"
+          />
           <span>open to travel</span>
         </div>
       </div>
@@ -41,7 +48,9 @@
           teams.
         </span>
       </div>
-      <button class="btn">Send a message</button>
+
+      <button class="btn desktop-only">Send a message</button>
     </div>
+    <div><button class="btn mobile-only">Send a message</button></div>
   </div>
 </div>

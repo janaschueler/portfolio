@@ -76,6 +76,58 @@ h3 {
   margin-top: auto;
 }
 
+.icon,
+.travel-img {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.pin-icon {
+  background-image: url("/assets/icons/pin.svg");
+}
+
+.remote-icon-wrapper {
+  width: 32px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.remote-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/icons/remote-work.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right center;
+  transition: background-image 0.3s ease;
+}
+
+.preference-unit:hover .pin-icon {
+  background-image: url("/assets/icons/pin-hover.svg");
+  transform: scale(1.2) translateY(-1%);
+  transform-origin: bottom center;
+}
+
+.preference-unit:hover .remote-icon {
+  background-image: url("/assets/icons/remote-work-hover.svg");
+  transform: scale(1.25);
+  transform-origin: bottom right;
+}
+
+.travel-img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.preference-unit:hover .travel-img {
+  transform: rotate(20deg);
+  transform-origin: center;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;
@@ -109,4 +161,52 @@ h3 {
   height: auto;
   z-index: 0;
   pointer-events: none;
+}
+
+@media (max-width: 550px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headline-container {
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  h1 {
+    font-size: 52px !important;
+  }
+  h2 {
+    font-size: 32px !important;
+  }
+  .preference-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-left: 15%;
+  }
+
+  .preference-unit {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .remote-icon-wrapper {
+    justify-content: flex-start !important;
+  }
+
+  .content-container {
+    width: 90%;
+    height: 100%;
+  }
 }
