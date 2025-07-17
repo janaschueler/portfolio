@@ -63,7 +63,7 @@ button.btn:disabled {
 }
 
 .top-btn .top-icon:hover {
-  content: url("/assets/img/top-button-hover.png");
+  content: url("./../../assets/img/top-button-hover.png");
   cursor: pointer;
 }
 
@@ -150,4 +150,33 @@ button.btn:disabled {
   height: auto;
   z-index: 0;
   pointer-events: none;
+}
+
+@media (max-width: 550px) {
+  .contact-container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .content-container {
+    width: 100% !important;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .ellipse-1 {
+    right: 16%;
+    width: 64px;
+  }
+
+  .ellipse-3 {
+    right: 3%;
+    width: 40px;
+  }
 }

@@ -57,9 +57,9 @@ h4 {
 }
 
 .testimonial-unit {
-  flex: 1;
+  // flex: 1;
   min-width: 0;
-  max-width: 240px;
+  // max-width: 240px;
   display: flex;
   flex-direction: column;
 }
@@ -90,13 +90,13 @@ h4 {
   .testimonial-container {
     display: flex !important;
     flex-direction: row;
+    justify-content: flex-start;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    scroll-padding-left: 16px;
+    padding-left: 22.5%;
+    scroll-padding-left: 22.5%;
   }
 
   .testimonial-container::-webkit-scrollbar {
@@ -104,9 +104,13 @@ h4 {
   }
 
   .testimonial-unit {
-    flex: 0 0 55%;
+    flex: 0 0 55vw;
+    width: 55vw;
+    max-width: none;
+    min-width: 0;
     scroll-snap-align: start;
     border-radius: 8px;
     padding: 1rem;
+    box-sizing: border-box;
   }
 }

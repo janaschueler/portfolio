@@ -69,7 +69,7 @@ export class ContactComponent {
 
     const formData = this.form.value;
 
-    fetch('https://formspree.io/f/xeozjrnw', {
+    fetch('https://janaschuelerhub.com/sendmail.php', {
       method: 'POST',
       headers: {
         Accept: 'application/json',

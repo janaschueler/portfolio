@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1; /* macht diesen Bereich dehnbar */
+  flex: 1;
 }
 
 h1 {
@@ -46,18 +46,11 @@ h3 {
 
 .preference-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-  margin-top: auto;
-}
-
-.preference-container {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  margin-top: auto;
 }
 
 .preference-unit {
@@ -86,7 +79,7 @@ h3 {
 }
 
 .pin-icon {
-  background-image: url("/assets/icons/pin.svg");
+  background-image: url("./../../assets/icons/pin.svg");
 }
 
 .remote-icon-wrapper {
@@ -98,7 +91,7 @@ h3 {
 .remote-icon {
   width: 24px;
   height: 24px;
-  background-image: url("/assets/icons/remote-work.svg");
+  background-image: url("./../../assets/icons/remote-work.svg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: right center;
@@ -106,13 +99,13 @@ h3 {
 }
 
 .preference-unit:hover .pin-icon {
-  background-image: url("/assets/icons/pin-hover.svg");
+  background-image: url("./../../assets/icons/pin-hover.svg");
   transform: scale(1.2) translateY(-1%);
   transform-origin: bottom center;
 }
 
 .preference-unit:hover .remote-icon {
-  background-image: url("/assets/icons/remote-work-hover.svg");
+  background-image: url("./../../assets/icons/remote-work-hover.svg");
   transform: scale(1.25);
   transform-origin: bottom right;
 }
@@ -190,7 +183,7 @@ h3 {
     align-items: center;
     width: 100%;
     margin-bottom: 32px;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .preference-unit {
@@ -208,5 +201,13 @@ h3 {
   .content-container {
     width: 90%;
     height: 100%;
+  }
+
+  .ellipse-1 {
+    left: 20%;
+  }
+
+  .ellipse-2 {
+    right: 8%;
   }
 }

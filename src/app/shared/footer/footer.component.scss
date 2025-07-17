@@ -54,3 +54,32 @@
     filter: invert(1);
   }
 }
+
+@media (max-width: 550px) {
+  .footer-container {
+    height: auto;
+    flex-direction: column !important;
+    gap: 24px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    > a {
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    > a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+      width: 25%;
+      height: 2px;
+      background-color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    > a:hover::after {
+      opacity: 1;
+    }
+  }
+}
