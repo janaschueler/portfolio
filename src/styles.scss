@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -10,6 +9,10 @@ body {
   height: 100%;
   width: min(100%, 1440px);
   margin-inline: auto;
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 body,
@@ -27,7 +30,6 @@ a {
 body {
   margin: 0;
 }
-
 
 h1,
 h3 {

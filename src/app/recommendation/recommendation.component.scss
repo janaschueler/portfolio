@@ -7,7 +7,7 @@
   height: auto;
   min-width: 300px;
   padding-bottom: 96px;
-  padding-top: 96px;
+  padding-top: 32px;
   padding-left: 2%;
   padding-right: 2%;
   justify-content: center;
@@ -25,7 +25,7 @@ p {
 }
 
 h3 {
-  margin-bottom: 0 !important;
+  margin-bottom: 8px !important;
 }
 
 h4 {
@@ -35,16 +35,19 @@ h4 {
 .testimonial-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding-left: 96px;
   padding-right: 96px;
   gap: 32px;
+  margin-top: 16px;
 }
 
 .testimonial-name {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   > h5 {
     margin-bottom: 0px !important;
     font-weight: bold !important;
+    font-size: 18px;
   }
   > span {
     font-size: 14px;
@@ -56,75 +59,54 @@ h4 {
 .testimonial-unit {
   flex: 1;
   min-width: 0;
-  max-width: 100%;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
 }
 
 @media (max-width: 550px) {
+  .recommendation-container {
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
   h3 {
     font-size: 32px;
     text-align: center;
+    padding-left: 2%;
   }
 
   h4 {
     font-size: 20px;
     text-align: center;
   }
-}
 
-  @media (max-width: 550px) {
-    .testimonial-mobile-container {
-      display: block;
-      width: 100%;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-
-    .testimonial-carousel {
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    .testimonial-carousel .testimonial-unit {
-      display: none;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      padding: 1rem;
-      margin: 1rem 0;
-      background-color: rgba(255, 255, 255, 0.05);
-    }
-
-    .testimonial-carousel .testimonial-unit.active {
-      display: block;
-    }
-
-    .testimonial-carousel .testimonial-name h5 {
-      margin-bottom: 4px;
-      font-weight: bold;
-    }
-
-    .testimonial-carousel .testimonial-name span {
-      font-size: 13px;
-      color: #ccc;
-    }
-
-    .testimonial-carousel .button-container {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 1rem;
-      gap: 16px;
-    }
-
-    .testimonial-carousel .button-container button {
-      background: transparent;
-      border: 1px solid white;
-      color: white;
-      padding: 0.5rem 1rem;
-      font-size: 1.2rem;
-      border-radius: 6px;
-      cursor: pointer;
-      flex: 1;
-    }
+  h5,
+  span,
+  p {
+    text-align: center;
   }
 
+  .testimonial-container {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    scroll-padding-left: 16px;
+  }
+
+  .testimonial-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-unit {
+    flex: 0 0 55%;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+}
