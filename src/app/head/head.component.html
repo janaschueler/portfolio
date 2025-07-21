@@ -5,9 +5,10 @@
     alt="ellipse"
   />
   <div class="scroll-down-mobile-container mobile-only">
-    <span>Scroll</span>
+    <span>{{ 'head.scroll' | translate }}</span>
     <img src="assets/icons/arrow-down-line.png" alt="" />
   </div>
+
   <div class="image-container">
     <img
       class="bubble-header desktop-only"
@@ -16,25 +17,36 @@
     />
     <img class="portrait" src="assets/img/jana-schueler.png" alt="" />
   </div>
+
   <div class="content-container">
     <div class="mt-120 mobile-only"></div>
     <div class="headline">
-      <H2>HELLO! I AM JANA</H2>
-      <h1 class="letter-spacing margin-bottom">FRONTEND</h1>
-      <h1>DEVELOPER</h1>
+      <h2>{{ 'head.hello' | translate }}</h2>
+      <h1 class="letter-spacing margin-bottom">{{ 'head.frontend' | translate }}</h1>
+      <h1>{{ 'head.developer' | translate }}</h1>
     </div>
-    <span class="desktop-only">SCROLL</span>
+
+    <span class="desktop-only">{{ 'head.scroll' | translate }}</span>
+
     <div class="sm-container">
       <div class="vertical-line desktop-only"></div>
       <div class="sm-icons desktop-only">
-        <a href="https://github.com/janaschueler">
+        <a
+          href="https://github.com/janaschueler"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="assets/icons/git.svg" alt="icon-github" />
         </a>
-        <a href="mailto:janaschuler@protonmail.com">
+        <a href="#contact">
           <img src="assets/icons/email.svg" alt="icon sent mail" />
         </a>
-        <a href="https://www.linkedin.com/in/jana-sch%C3%BCler-31704667/">
-          <img src="assets/icons/linkedIn.svg" alt="icon-github" />
+        <a
+          href="https://www.linkedin.com/in/jana-sch%C3%BCler-31704667/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/icons/linkedIn.svg" alt="icon-linkedin" />
         </a>
       </div>
     </div>

@@ -71,6 +71,8 @@ button.btn:disabled {
   margin-top: 8px !important;
 }
 
+
+
 ::ng-deep .mat-mdc-text-field-wrapper {
   background-color: white !important;
   border: solid 1px #5988ff;
@@ -152,7 +154,47 @@ button.btn:disabled {
   pointer-events: none;
 }
 
-@media (max-width: 550px) {
+.email-sent-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  max-width: 300px; /* oder z.B. 80% für mobil */
+  width: auto;
+  height: auto;
+  animation: fadeInOut 3s ease forwards;
+  pointer-events: none;
+  text-align: center;
+  background: linear-gradient(to bottom right, #5988ff, #5988ff, #0043f0);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+}
+
+@media (max-width: 768px) {
   .contact-container {
     padding-left: 8%;
     padding-right: 8%;
@@ -160,6 +202,10 @@ button.btn:disabled {
 
   .main-container {
     flex-direction: column;
+  }
+
+  h1 {
+    font-size: 64px !important;
   }
 
   .content-container {

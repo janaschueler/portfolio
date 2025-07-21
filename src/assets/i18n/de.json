@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "skillset": "Fähigkeiten",
+    "work": "Meine Arbeiten"
+  },
+  "about": {
+    "headline1": "Lass uns zusammenarbeiten",
+    "headline2": "Ich bin ...",
+    "location": "Standort in Münster",
+    "remote": "offen für Remote-Arbeit",
+    "travel": "offen für Reisen",
+    "introText": "... begeistert von Webentwicklung, kombiniere Logik und Kreativität, um benutzerorientierte Lösungen zu bauen.\n\nIch lerne gerne neue Technologien wie Angular und responsive Design, um mich ständig weiterzuentwickeln.\n\nIch gehe Herausforderungen analytisch an und arbeite gerne in agilen, kollaborativen Teams.",
+    "cta": "Nachricht senden"
+  },
+  "head": {
+    "scroll": "SCROLLEN",
+    "hello": "HALLO! ICH BIN JANA",
+    "frontend": "FRONTEND",
+    "developer": "ENTWICKLERIN"
+  }
+}

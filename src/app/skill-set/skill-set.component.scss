@@ -20,6 +20,7 @@
   align-items: center;
   margin-left: 8%;
   margin-right: 8%;
+  position: relative;
 }
 
 .icon-unit {
@@ -30,28 +31,43 @@
   flex-direction: column;
   transition: all 0.2s ease;
   cursor: default;
-  > img {
+  position: relative; 
+
+  > img.icon {
     height: 75px;
     width: auto;
     transition: transform 0.2s ease;
   }
+
   > span {
     display: inline-block;
     width: 80px;
     text-align: center;
-    font-weight: 200;
-    transition: font-weight 0.2s ease;
     color: white;
     font-weight: 200;
     transition: font-weight 0.2s ease;
   }
 
-  &:hover > img {
+  &:hover > img.icon {
     transform: translateY(-6px);
   }
-
-  &:hover > span {
+  ∂ &:hover > span {
     font-weight: 400;
+  }
+
+  .hover-image {
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 137%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 200px;
+    padding: 5px;
+  }
+
+  &:hover .hover-image {
+    display: block;
   }
 }
 
@@ -59,9 +75,10 @@ h1 {
   color: white !important;
   text-align: center;
   margin-bottom: 64px;
+  font-size: 64px !important;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .icon-container {
     gap: 24px !important;
     margin-left: 0 !important;
@@ -77,5 +94,9 @@ h1 {
       text-align: center;
       font-size: 14px;
     }
+  }
+
+  h1 {
+    font-size: 64px !important;
   }
 }

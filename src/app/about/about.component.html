@@ -1,56 +1,45 @@
 <div id="about" class="about-container">
-  <img
-    class="ellipse-1"
-    src="assets/bubble/about-ellipse1.png"
-    alt="blue ellipse"
-  />
-  <img
-    class="ellipse-2"
-    src="assets/bubble/about-ellipse2.png"
-    alt="blue ellipse"
-  />
+  <img class="ellipse-1" src="assets/bubble/about-ellipse1.png" alt="blue ellipse" />
+  <img class="ellipse-2" src="assets/bubble/about-ellipse2.png" alt="blue ellipse" />
+
   <div class="main-container">
     <div class="headline-container">
       <div class="headline-center">
-        <h1>Let's work together</h1>
-        <h2>I am ...</h2>
+        <h1>{{ 'about.headline1' | translate }}</h1>
+        <h2>{{ 'about.headline2' | translate }}</h2>
       </div>
+
       <div class="preference-container">
         <div class="preference-unit">
           <div class="icon pin-icon"></div>
-          <span>location in Münster</span>
+          <span>{{ 'about.location' | translate }}</span>
         </div>
         <div class="preference-unit">
           <div class="remote-icon-wrapper">
             <div class="remote-icon"></div>
           </div>
-          <span>open to work remote</span>
+          <span>{{ 'about.remote' | translate }}</span>
         </div>
-
         <div class="preference-unit">
-          <img
-            class="travel-img"
-            src="ng buildassets/icons/travel.svg"
-            alt="icon suitcase"
-          />
-          <span>open to travel</span>
+          <img class="travel-img" src="assets/icons/travel.svg" alt="icon suitcase" />
+          <span>{{ 'about.travel' | translate }}</span>
         </div>
       </div>
     </div>
+
     <div class="content-container">
       <div class="content-text">
-        <span>
-          ... passionate about web development, combining logic and creativity
-          to build user-focused solutions.<br /><br />
-          I enjoy learning new technologies like Angular and responsive design
-          to continuously grow.<br /><br />
-          I tackle challenges analytically and thrive in agile, collaborative
-          teams.
-        </span>
+        <span>{{ 'about.introText' | translate }}</span>
       </div>
-
-      <button class="btn desktop-only">Send a message</button>
+      <a href="#contact" class="btn-container">
+        <button class="btn desktop-only">{{ 'about.cta' | translate }}</button>
+      </a>
     </div>
-    <div><button class="btn mobile-only">Send a message</button></div>
+
+    <div>
+      <a href="#contact" class="btn-container">
+        <button class="btn mobile-only">{{ 'about.cta' | translate }}</button>
+      </a>
+    </div>
   </div>
 </div>

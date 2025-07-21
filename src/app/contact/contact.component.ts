@@ -13,6 +13,8 @@ import {
   FormsModule,
   ReactiveFormsModule,
   Validators,
+  FormGroupDirective,
+  NgForm,
 } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -20,6 +22,8 @@ import { merge } from 'rxjs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CommonModule } from '@angular/common';
 import { isPlatformBrowser } from '@angular/common';
+import { ErrorStateMatcher } from '@angular/material/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -32,6 +36,7 @@ import { isPlatformBrowser } from '@angular/common';
     ReactiveFormsModule,
     MatSelectModule,
     MatCheckboxModule,
+    RouterModule,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
@@ -39,6 +44,7 @@ import { isPlatformBrowser } from '@angular/common';
 export class ContactComponent {
   readonly email = new FormControl('', [Validators.required, Validators.email]);
 
+  emailSent = false;
   errorMessage = signal('');
 
   form = this.fb.group({
@@ -64,8 +70,38 @@ export class ContactComponent {
     }
   }
 
+  // sendMail(event: Event): void {
+  //   event.preventDefault();
+
+  //   const formData = this.form.value;
+
+  //   fetch('https://janaschuelerhub.com/sendmail.php', {
+  //     method: 'POST',
+  //     headers: {
+  //       Accept: 'application/json',
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({
+  //       name: formData.name,
+  //       email: formData.email,
+  //       message: formData.message,
+  //     }),
+  //   })
+  //     .then((res) => {
+  //       if (!res.ok) {
+  //         throw new Error('Form submission failed');
+  //       }
+  //       console.log('email sent');
+  //     })
+  //     .catch((error) => {
+  //       console.error('Form error:', error);
+  //     });
+  // }
+
   sendMail(event: Event): void {
     event.preventDefault();
+
+    if (this.form.invalid) return;
 
     const formData = this.form.value;
 
@@ -85,7 +121,21 @@ export class ContactComponent {
         if (!res.ok) {
           throw new Error('Form submission failed');
         }
+
         console.log('email sent');
+
+        this.emailSent = true;
+        setTimeout(() => {
+          this.emailSent = false;
+        }, 3000);
+
+        this.form.reset();
+
+        Object.values(this.form.controls).forEach((control) => {
+          control.markAsPristine();
+          control.markAsUntouched();
+          control.updateValueAndValidity();
+        });
       })
       .catch((error) => {
         console.error('Form error:', error);
@@ -107,7 +157,6 @@ export class ContactComponent {
       accept: [false, Validators.requiredTrue],
     });
 
-    // Log bei jedem Statuswechsel
     this.form.get('accept')?.statusChanges.subscribe(() => {
       console.log('accept status:', this.form.get('accept')?.status);
       console.log('invalid:', this.form.get('accept')?.invalid);

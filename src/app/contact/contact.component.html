@@ -1,4 +1,4 @@
-<div class="contact-container">
+<div id="contact" class="contact-container">
   <img
     class="ellipse-1"
     src="assets/bubble/contact-ellipse1.png"
@@ -83,13 +83,24 @@
               form.get('accept')?.invalid && form.get('accept')?.touched
           }"
         >
-          I agree to the processing of my data as stated in the privacy policy.*
+          I agree to the processing of my data as stated in the
+          <a
+            class="no-design"
+            [routerLink]="['/legal']"
+            [fragment]="'privacy-policy'"
+            (click)="$event.stopPropagation()"
+          >
+            privacy policy </a
+          >.*
         </mat-checkbox>
 
         <div class="button-wrapper">
           <button class="btn" type="submit" [disabled]="form.invalid">
             Say hello &#58;&#41;
           </button>
+        </div>
+        <div class="email-sent-popup" *ngIf="emailSent">
+          Looking forward to talking to you
         </div>
       </form>
     </div>

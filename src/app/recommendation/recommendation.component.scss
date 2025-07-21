@@ -64,10 +64,14 @@ h4 {
   flex-direction: column;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .recommendation-container {
     justify-content: flex-start;
     align-items: stretch;
+  }
+
+  h1 {
+    font-size: 64px !important;
   }
 
   h3 {

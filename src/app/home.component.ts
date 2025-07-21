@@ -1,0 +1,30 @@
+import { Component } from '@angular/core';
+import { HeadComponent } from './head/head.component';
+import { AboutComponent } from './about/about.component';
+import { SkillSetComponent } from './skill-set/skill-set.component';
+import { MyWorkComponent } from './my-work/my-work.component';
+import { RecommendationComponent } from './recommendation/recommendation.component';
+import { ContactComponent } from './contact/contact.component';
+
+@Component({
+  selector: 'app-home',
+  standalone: true,
+  imports: [
+
+    HeadComponent,
+    AboutComponent,
+    SkillSetComponent,
+    MyWorkComponent,
+    RecommendationComponent,
+    ContactComponent,
+  ],
+  template: `
+    <app-head></app-head>
+    <app-about></app-about>
+    <app-skill-set></app-skill-set>
+    <app-my-work></app-my-work>
+    <app-recommendation></app-recommendation>
+    <app-contact></app-contact>
+  `,
+})
+export class HomeComponent {}

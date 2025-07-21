@@ -44,6 +44,10 @@ h3 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .preference-container {
   display: flex;
   flex-direction: row;
@@ -156,7 +160,7 @@ h3 {
   pointer-events: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .main-container {
     flex-direction: column;
     align-items: center;
@@ -172,8 +176,9 @@ h3 {
   }
 
   h1 {
-    font-size: 52px !important;
+    font-size: 64px !important;
   }
+
   h2 {
     font-size: 32px !important;
   }
@@ -201,6 +206,7 @@ h3 {
   .content-container {
     width: 90%;
     height: 100%;
+    padding-right: 0;
   }
 
   .ellipse-1 {

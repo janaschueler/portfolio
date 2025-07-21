@@ -38,8 +38,12 @@ h3 {
   color: #5988ff !important;
 }
 
+.mat-display-large, .mat-typography .mat-display-large, .mat-typography h1 {
+  font-size: 80px !important;
+}
+
 h1 {
-  font-size: 80px;
+  font-size: 80px !important;
 }
 
 h3 {
@@ -178,6 +182,53 @@ h5 {
   transition: transform 0.15s ease, color 0.15s ease;
   cursor: pointer;
   background: linear-gradient(135deg, #5988ff, #5988ff, #0043f0);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background: white;
+    transform: translate(-100%, -100%);
+    z-index: -1;
+    border-radius: inherit;
+    transition: transform 0.15s ease;
+  }
+
+  &:not(:disabled):hover {
+    transform: scale(1.1);
+    color: #5988ff;
+    border: 1px solid #5988ff;
+
+    &::before {
+      transform: translate(0, 0);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.mat-internal-form-field > label {
+  font-family: "Montserrat";
+}
+
+.mat-mdc-form-field:not(.mat-form-field-disabled)
+  .mat-mdc-floating-label.mdc-floating-label {
+  font-family: "Montserrat";
+}
+
+.no-design {
+  color: #5988ff;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @font-face {
@@ -271,20 +322,20 @@ h5 {
 }
 
 .desktop-only {
-  display: block;
+  display: flex;
 }
 
 .mobile-only {
   display: none;
 }
 
-@media screen and (max-width: 558px) {
+@media screen and (max-width: 768px) {
   .desktop-only {
     display: none !important;
   }
 
   .mobile-only {
-    display: block !important;
+    display: flex !important;
   }
 
   .button-container {

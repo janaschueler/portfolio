@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "about": "About me",
+    "skillset": "Skill set",
+    "work": "My work"
+  },
+  "about": {
+    "headline1": "Let's work together",
+    "headline2": "I am ...",
+    "location": "location in Münster",
+    "remote": "open to work remote",
+    "travel": "open to travel",
+    "introText": "... passionate about web development, combining logic and creativity to build user-focused solutions.\n\nI enjoy learning new technologies like Angular and responsive design to continuously grow.\n\nI tackle challenges analytically and thrive in agile, collaborative teams.",
+    "cta": "Send a message"
+  },
+  "head": {
+    "scroll": "SCROLL",
+    "hello": "HELLO! I AM JANA",
+    "frontend": "FRONTEND",
+    "developer": "DEVELOPER"
+  }
+}
