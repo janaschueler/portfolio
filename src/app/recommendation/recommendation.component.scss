@@ -6,7 +6,7 @@
   width: 100%;
   height: auto;
   min-width: 300px;
-  padding-bottom: 96px;
+  padding-bottom: 64px;
   padding-top: 32px;
   padding-left: 2%;
   padding-right: 2%;
@@ -103,8 +103,8 @@ h5 {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 16px;
-    padding-left: 22.5%;
-    scroll-padding-left: 22.5%;
+    padding-left: 14%;
+    scroll-padding-left: 14%;
   }
 
   .testimonial-container::-webkit-scrollbar {
@@ -112,13 +112,13 @@ h5 {
   }
 
   .testimonial-unit {
-    flex: 0 0 55vw;
-    width: 55vw;
+    flex: 0 0 70vw;
+    width: 70vw;
     max-width: none;
     min-width: 0;
     scroll-snap-align: start;
     border-radius: 8px;
-    padding: 1rem;
+    padding-top: 1rem;
     box-sizing: border-box;
   }
 }

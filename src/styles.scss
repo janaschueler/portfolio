@@ -25,6 +25,7 @@ body,
 a {
   font: 200 1rem / 1.5rem "Montserrat", sans-serif !important;
   color: #5988ff;
+  text-decoration: none;
 }
 
 body {
@@ -123,6 +124,10 @@ h5 {
   font: 200 1rem / 1.5rem "Montserrat", sans-serif;
 }
 
+.tn-container {
+  text-decoration: none !important;
+}
+
 .btn {
   position: relative;
   overflow: hidden;
@@ -136,7 +141,7 @@ h5 {
   background-color: transparent;
   padding: 12px 24px;
   width: fit-content;
-  transition: transform 0.15s ease, color 0.15s ease;
+  transition: transform 75ms ease, color 75ms ease;
   cursor: pointer;
 
   &:disabled {
@@ -155,7 +160,7 @@ h5 {
     transform: translate(-100%, -100%);
     z-index: -1;
     border-radius: inherit;
-    transition: transform 0.15s ease;
+    transition: transform 75ms ease;
   }
 
   &:not(:disabled):hover {
@@ -181,9 +186,10 @@ h5 {
   border-radius: 10px;
   padding: 12px 24px;
   width: fit-content;
-  transition: transform 0.15s ease, color 0.15s ease;
+  transition: transform 75ms ease, color 75ms ease;
   cursor: pointer;
   background: linear-gradient(135deg, #5988ff, #5988ff, #0043f0);
+  text-decoration: none;
 
   &::before {
     content: "";
@@ -196,7 +202,7 @@ h5 {
     transform: translate(-100%, -100%);
     z-index: -1;
     border-radius: inherit;
-    transition: transform 0.15s ease;
+    transition: transform 75ms ease;
   }
 
   &:not(:disabled):hover {
