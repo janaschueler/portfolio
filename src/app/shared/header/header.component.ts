@@ -11,7 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    TranslateModule, // <== wichtig
+    TranslateModule, 
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
@@ -19,20 +19,31 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   activeLink = '';
 
+  /**
+   * Initializes the header component with the default language set to English using the TranslateService.
+   * @param translate Service for handling translations.
+   */
   constructor(private translate: TranslateService) {
-    // Optional: Browser-Sprache oder Default setzen
     this.translate.setDefaultLang('en');
     this.translate.use('en');
   }
 
+  /**
+   * Sets the active navigation link and smoothly scrolls to the corresponding section.
+   * @param event The click event to prevent default navigation.
+   * @param link The selector of the target section to scroll into view.
+   */
   setActive(event: Event, link: string): void {
     event.preventDefault();
     this.activeLink = link;
-
     const el = document.querySelector(link);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   }
 
+  /**
+   * Switches the application's language between German ('de') and English ('en').
+   * @param lang The language code to switch to.
+   */
   switchLanguage(lang: 'de' | 'en') {
     this.translate.use(lang);
   }

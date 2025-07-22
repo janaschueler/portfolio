@@ -3,3 +3,9 @@
 .content-container {
   padding-left: 8%;
 }
+
+@media (max-width: 768px) {
+  .content-container {
+    padding-left: 0 !important;
+  }
+}

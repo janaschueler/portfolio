@@ -1,18 +1,14 @@
 <mat-toolbar>
   <div class="toolbar-content">
     <div class="logo-container">
-      <img src="assets/icons/logo.svg" alt="Logo" />
+      <a href="#start"> <img src="assets/icons/logo.svg" alt="Logo" /></a>
     </div>
     <div class="nav-container">
-      <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Menu icon"
-      ></button>
+      <button mat-icon-button class="example-icon" aria-label="Menu icon"></button>
 
-      <a href="#about">{{ 'nav.about' | translate }}</a>
-      <a href="#skillset">{{ 'nav.skillset' | translate }}</a>
-      <a href="#work">{{ 'nav.work' | translate }}</a>
+      <a href="#about">{{ "nav.about" | translate }}</a>
+      <a href="#skillset">{{ "nav.skillset" | translate }}</a>
+      <a href="#work">{{ "nav.work" | translate }}</a>
 
       <div>
         <a (click)="switchLanguage('de')">DE</a>

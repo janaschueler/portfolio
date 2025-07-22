@@ -4,19 +4,132 @@
     "skillset": "Skill set",
     "work": "My work"
   },
+  "mobileNav": {
+    "about": "Über mich",
+    "skillset": "Fähigkeiten",
+    "work": "Meine Arbeiten"
+  },
+  "head": {
+    "scroll": "SCROLL",
+    "hello": "Hello! I am Jana",
+    "frontend": "FRONTEND",
+    "developer": "DEVELOPER"
+  },
   "about": {
     "headline1": "Let's work together",
-    "headline2": "I am ...",
+    "headline2": "I am...",
     "location": "location in Münster",
     "remote": "open to work remote",
     "travel": "open to travel",
     "introText": "... passionate about web development, combining logic and creativity to build user-focused solutions.\n\nI enjoy learning new technologies like Angular and responsive design to continuously grow.\n\nI tackle challenges analytically and thrive in agile, collaborative teams.",
     "cta": "Send a message"
   },
-  "head": {
-    "scroll": "SCROLL",
-    "hello": "HELLO! I AM JANA",
-    "frontend": "FRONTEND",
-    "developer": "DEVELOPER"
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Got a problem to solve?",
+    "text1": "I’m a frontend developer passionate about clean code, accessibility, and user-centered design. Let’s build something valuable together!",
+    "text2": "Need a frontend developer? Contact me!",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message",
+    "nameError": "Your name is required.",
+    "emailError": "Your email is required.",
+    "messageError": "Your message is required.",
+    "checkbox": "I agree to the processing of my data as stated in the",
+    "privacyPolicy": "privacy policy",
+    "submit": "Say hello :)",
+    "success": "Looking forward to talking to you"
+  },
+  "work": {
+    "title": "My Work",
+    "description": "Explore a selection of my work here – Interact with projects to see my skills in action."
+  },
+  "join": {
+    "title": "Join",
+    "tech": "HTML | CSS | Firebase",
+    "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "live": "Live test",
+    "github": "Github"
+  },
+  "pokedex": {
+    "title": "Pokédex",
+    "tech": "JavaScript | HTML | API",
+    "description": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information.",
+    "live": "Live test"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "tech": "Angular | HTML | CSS",
+    "description": "A personal portfolio website built with Angular, showcasing my projects, skills, and experience as a web developer. Designed with a responsive layout and modern UI.",
+    "live": "Live test"
+  },
+  "sharky": {
+    "title": "Sharky",
+    "tech": "JavaScript | HTML | CSS",
+    "description": "\"Jump, run, and throw\" game based on an object-oriented approach. Help Sharky collect coins and potions to fight against the dangerous Orca.",
+    "live": "Live test"
+  },
+  "recommendation": {
+    "headline": "Need a team player?",
+    "subheadline": "What my colleagues say about me",
+    "testimonials": [
+      {
+        "name": "Max Name",
+        "project": "Company / Project",
+        "quote": "Short quote highlighting my soft skills."
+      },
+      {
+        "name": "Max Name",
+        "project": "Company / Project",
+        "quote": "Another example of a brief and positive testimonial."
+      },
+      {
+        "name": "Simon Heistermann",
+        "project": "Developer Academy | Join",
+        "quote": "Jana works in a structured, reliable, and thoughtful manner. Her calm and clear communication, combined with strong organizational skills, contributed significantly to the progress of our project. Working with her was always pleasant, effective, and above all, successful. I can wholeheartedly recommend Jana!"
+      }
+    ]
+  },
+  "footer": {
+    "legal": "Legal Notice"
+  },
+
+  "legal": {
+    "title": "Legal Notice",
+    "section1": {
+      "title": "Information pursuant to § 5 TMG",
+      "responsible": "Responsible for the content according to § 5 TMG: Jana Schüler"
+    },
+    "email": "Email",
+    "section2": {
+      "title": "Contact",
+      "text": "If you have any questions or concerns, feel free to contact me via email at:"
+    },
+    "section3": {
+      "title": "Disclaimer",
+      "text": "The contents of this website have been created with the greatest possible care..."
+    },
+    "section4": {
+      "title": "Copyright",
+      "text": "The content and works published on this website are subject to German copyright law..."
+    },
+    "section5": {
+      "title": "Privacy Policy",
+      "intro": "Protecting your personal data is important to me...",
+      "responsibleEntity": "Responsible Entity",
+      "purpose": "Purpose of Data Collection",
+      "purposeText": "The data collected is used exclusively to process your inquiry...",
+      "legalBasis": "Legal Basis",
+      "legalBasisText": "Data processing is based on your voluntary consent...",
+      "storage": "Storage Duration",
+      "storageText": "Your data will be stored only as long as necessary...",
+      "rights": "Your Rights",
+      "rightsText": "You have the right to obtain information about your stored personal data...",
+      "ssl": "SSL Encryption",
+      "sslText": "This website uses SSL encryption for security reasons...",
+      "consent": "Consent Notice",
+      "consentText": "By submitting the contact form, you consent to the processing..."
+    },
+    "lastUpdate": "Last updated: July 2025"
   }
 }

@@ -1,115 +1,66 @@
 <div id="contact" class="contact-container">
-  <img
-    class="ellipse-1"
-    src="assets/bubble/contact-ellipse1.png"
-    alt="blue ellipse"
-  />
-  <img
-    class="ellipse-2 desktop-only"
-    src="assets/bubble/contact-ellipse2.png"
-    alt="blue ellipse"
-  />
-  <img
-    class="ellipse-3"
-    src="assets/bubble/contact-ellipse3.png"
-    alt="blue ellipse"
-  />
-  <h1>Contact</h1>
+  <img class="ellipse-1" src="assets/bubble/contact-ellipse1.png" alt="blue ellipse" />
+  <img class="ellipse-2 desktop-only" src="assets/bubble/contact-ellipse2.png" alt="blue ellipse" />
+  <img class="ellipse-3" src="assets/bubble/contact-ellipse3.png" alt="blue ellipse" />
+
+  <h1>{{ "contact.title" | translate }}</h1>
+
   <div class="main-container">
     <div class="content-container">
-      <h3>Got a problem to solve?</h3>
-      <p>
-        I’m a frontend developer passionate about clean code, accessibility, and
-        user-centered design. Let’s build something valuable together!
+      <h3>{{ "contact.subtitle" | translate }}</h3>
+      <p>{{ "contact.text1" | translate }}</p>
+      <p class="blue">
+        <span>{{ "contact.text2" | translate }}</span>
       </p>
-      <p class="blue">Need a frontend developer? <b>contact me!</b></p>
     </div>
+
     <div class="form-container">
       <form class="form" [formGroup]="form" (ngSubmit)="sendMail($event)">
         <mat-form-field>
-          <mat-label>Your name</mat-label>
+          <mat-label>{{ "contact.nameLabel" | translate }}</mat-label>
           <input matInput formControlName="name" />
-          <mat-error
-            class="form-error"
-            [style.visibility]="
-              form.get('name')?.invalid && form.get('name')?.touched
-                ? 'visible'
-                : 'hidden'
-            "
-          >
-            Your name is required.
+          <mat-error class="form-error" [style.visibility]="form.get('name')?.invalid && form.get('name')?.touched ? 'visible' : 'hidden'">
+            {{ "contact.nameError" | translate }}
           </mat-error>
         </mat-form-field>
 
         <mat-form-field>
-          <mat-label>Your email</mat-label>
-          <input
-            matInput
-            formControlName="email"
-            placeholder="pat@example.com"
-          />
-          <mat-error
-            class="form-error"
-            [style.visibility]="
-              form.get('email')?.invalid && form.get('email')?.touched
-                ? 'visible'
-                : 'hidden'
-            "
-          >
-            Your email is required.
+          <mat-label>{{ "contact.emailLabel" | translate }}</mat-label>
+          <input matInput formControlName="email" placeholder="pat@example.com" />
+          <mat-error class="form-error" [style.visibility]="form.get('email')?.invalid && form.get('email')?.touched ? 'visible' : 'hidden'">
+            {{ "contact.emailError" | translate }}
           </mat-error>
         </mat-form-field>
 
         <mat-form-field>
-          <mat-label>Your message</mat-label>
+          <mat-label>{{ "contact.messageLabel" | translate }}</mat-label>
           <textarea matInput formControlName="message"></textarea>
-          <mat-error
-            class="form-error"
-            [style.visibility]="
-              form.get('message')?.invalid && form.get('message')?.touched
-                ? 'visible'
-                : 'hidden'
-            "
-          >
-            Your message is required.
+          <mat-error class="form-error" [style.visibility]="form.get('message')?.invalid && form.get('message')?.touched ? 'visible' : 'hidden'">
+            {{ "contact.messageError" | translate }}
           </mat-error>
         </mat-form-field>
 
-        <mat-checkbox
-          formControlName="accept"
-          class="margin"
-          [ngClass]="{
-            'checkbox-error':
-              form.get('accept')?.invalid && form.get('accept')?.touched
-          }"
-        >
-          I agree to the processing of my data as stated in the
-          <a
-            class="no-design"
-            [routerLink]="['/legal']"
-            [fragment]="'privacy-policy'"
-            (click)="$event.stopPropagation()"
-          >
-            privacy policy </a
-          >.*
+        <mat-checkbox formControlName="accept" class="margin" [ngClass]="{ 'checkbox-error': form.get('accept')?.invalid && form.get('accept')?.touched }">
+          {{ "contact.checkbox" | translate }}
+          <a class="no-design" [routerLink]="['/legal']" [fragment]="'privacy-policy'" (click)="$event.stopPropagation()">
+            {{ "contact.privacyPolicy" | translate }} </a
+          >*
         </mat-checkbox>
 
         <div class="button-wrapper">
           <button class="btn" type="submit" [disabled]="form.invalid">
-            Say hello &#58;&#41;
+            {{ "contact.submit" | translate }}
           </button>
         </div>
+
         <div class="email-sent-popup" *ngIf="emailSent">
-          Looking forward to talking to you
+          {{ "contact.success" | translate }}
         </div>
       </form>
     </div>
   </div>
+
   <button class="top-btn" (click)="toTop()">
-    <img
-      class="top-icon"
-      src="assets/img/top-button.png"
-      alt="back to top button"
-    />
+    <img class="top-icon" src="assets/img/top-button.png" alt="back to top button" />
   </button>
 </div>

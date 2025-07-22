@@ -1,54 +1,23 @@
 <div id="work" class="my-work-container">
   <div class="decorations">
-    <img
-      class="ellipse-2 desktop-only"
-      src="assets/bubble/about-ellipse2.png"
-      alt="blue ellipse"
-    />
-    <img
-      class="ellipse-1"
-      src="assets/bubble/about-ellipse1.png"
-      alt="blue ellipse"
-    />
-    <img
-      class="ellipse-3"
-      src="assets/bubble/work-ellipse3.png"
-      alt="blue ellipse"
-    />
-
-    <img
-      class="ellipse-4"
-      src="assets/bubble/work-ellipse4.png"
-      alt="blue ellipse"
-    />
-    <img
-      class="ellipse-5 desktop-only"
-      src="assets/bubble/work-ellipse5.png"
-      alt="blue ellipse"
-    />
-
-    <img
-      class="ellipse-6"
-      src="assets/bubble/work-ellipse6.png"
-      alt="blue ellipse"
-    />
-    <img
-      class="ellipse-7"
-      src="assets/bubble/work-ellipse7.png"
-      alt="blue ellipse"
-    />
+    <img class="ellipse-2 desktop-only" src="assets/bubble/about-ellipse2.png" alt="blue ellipse" />
+    <img class="ellipse-1" src="assets/bubble/about-ellipse1.png" alt="blue ellipse" />
+    <img class="ellipse-3" src="assets/bubble/work-ellipse3.png" alt="blue ellipse" />
+    <img class="ellipse-4" src="assets/bubble/work-ellipse4.png" alt="blue ellipse" />
+    <img class="ellipse-5 desktop-only" src="assets/bubble/work-ellipse5.png" alt="blue ellipse" />
+    <img class="ellipse-6" src="assets/bubble/work-ellipse6.png" alt="blue ellipse" />
+    <img class="ellipse-7" src="assets/bubble/work-ellipse7.png" alt="blue ellipse" />
   </div>
+
   <div class="introduction-container">
-    <h1>My Work</h1>
-    <span>
-      Explore a selection of my work here – Interact with projects to see my
-      skills in action.
-    </span>
+    <h1>{{ "work.title" | translate }}</h1>
+    <span>{{ "work.description" | translate }}</span>
   </div>
+
   <div class="work-sample-container">
     <app-join></app-join>
     <app-sharky></app-sharky>
-    <app-pokedex> </app-pokedex>
-    <app-portfolio> </app-portfolio>
+    <app-pokedex></app-pokedex>
+    <app-portfolio></app-portfolio>
   </div>
 </div>

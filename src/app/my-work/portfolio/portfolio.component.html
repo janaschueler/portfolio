@@ -1,18 +1,15 @@
 <div class="main-container reverse">
   <div class="content-container">
-    <h3>Portfolio</h3>
-    <h4>Angular | HTML | CSS</h4>
-    <span>
-      A personal portfolio website built with Angular, showcasing my projects,
-      skills, and experience as a web developer. Designed with a responsive
-      layout and modern UI.
-    </span>
-    <div class="button-container">
-      <button class="btn-blue mobile-only">Live test</button>
-      <button class="btn">Github</button>
+    <h3>{{ "portfolio.title" | translate }}</h3>
+    <h4>{{ "portfolio.tech" | translate }}</h4>
+    <span>{{ "portfolio.description" | translate }}</span>
+    <div class="button-container right">
+      <a href="https://github.com/janaschueler/portfolio.git" target="_blank" rel="noopener noreferrer">
+        <button class="btn">Github</button>
+      </a>
     </div>
   </div>
   <div class="img-container">
-    <img src="assets/img/portfolio.png" alt="" />
+    <img src="assets/img/portfolio.png" alt="portfolio preview" />
   </div>
 </div>

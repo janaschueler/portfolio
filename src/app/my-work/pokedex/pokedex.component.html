@@ -1,27 +1,16 @@
 <div class="main-container">
   <div class="img-container">
-    <img src="assets/img/pokedex.png" alt="" />
+    <img src="assets/img/pokedex.png" alt="Pokedex Screenshot" />
   </div>
   <div class="content-container">
-    <h3>Pokédex</h3>
-    <h4>JavaSkript | HTML | Api</h4>
-    <span
-      >TBased on the PokéAPI a simple library that provides and catalogues
-      pokemon information.
-    </span>
+    <h3>{{ "pokedex.title" | translate }}</h3>
+    <h4>{{ "pokedex.tech" | translate }}</h4>
+    <span>{{ "pokedex.description" | translate }}</span>
     <div class="button-container">
-      <a
-        href="https://pokedex.janaschuelerhub.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <button class="btn-blue">Live test</button>
+      <a href="https://pokedex.janaschuelerhub.com" target="_blank" rel="noopener noreferrer">
+        <button class="btn-blue">{{ "pokedex.live" | translate }}</button>
       </a>
-      <a
-        href="https://github.com/janaschueler/Pokedex.git"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://github.com/janaschueler/Pokedex.git" target="_blank" rel="noopener noreferrer">
         <button class="btn">Github</button>
       </a>
     </div>

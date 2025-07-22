@@ -2,21 +2,135 @@
   "nav": {
     "about": "Über mich",
     "skillset": "Fähigkeiten",
-    "work": "Meine Arbeiten"
+    "work": "Projekte"
   },
-  "about": {
-    "headline1": "Lass uns zusammenarbeiten",
-    "headline2": "Ich bin ...",
-    "location": "Standort in Münster",
-    "remote": "offen für Remote-Arbeit",
-    "travel": "offen für Reisen",
-    "introText": "... begeistert von Webentwicklung, kombiniere Logik und Kreativität, um benutzerorientierte Lösungen zu bauen.\n\nIch lerne gerne neue Technologien wie Angular und responsive Design, um mich ständig weiterzuentwickeln.\n\nIch gehe Herausforderungen analytisch an und arbeite gerne in agilen, kollaborativen Teams.",
-    "cta": "Nachricht senden"
+  "mobileNav": {
+    "about": "Über mich",
+    "skillset": "Fähigkeiten",
+    "work": "Projekte"
   },
   "head": {
     "scroll": "SCROLLEN",
-    "hello": "HALLO! ICH BIN JANA",
+    "hello": "Hallo! Ich bin Jana",
     "frontend": "FRONTEND",
-    "developer": "ENTWICKLERIN"
+    "developer": "DEVELOPER"
+  },
+  "about": {
+    "headline1": "Let's work together",
+    "headline2": "Ich bin...",
+    "location": "Standort in Münster",
+    "remote": "offen für Remote-Arbeit",
+    "travel": "offen für Reisen",
+    "introText": "... begeistert von Webentwicklung, kombiniere Logik und Kreativität, um nutzerfreundliche Lösungen zu bauen.\n\nIch lerne gerne neue Technologien wie Angular und responsive Design, um mich stetig weiterzuentwickeln.\n\nIch gehe Herausforderungen analytisch an und arbeite gerne in agilen, kollaborativen Teams.",
+    "cta": "Nachricht senden"
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Hast du ein Problem zu lösen?",
+    "text1": "Als Frontend-Entwicklerin brenne ich für sauberen Code, Barrierefreiheit und nutzerzentriertes Design brennt. Lass uns gemeinsam etwas Wertvolles bauen!",
+    "text2": "Frontend-Entwicklerin gesucht? Kontaktiere mich!",
+    "nameLabel": "Dein Name",
+    "emailLabel": "Deine E-Mail",
+    "messageLabel": "Deine Nachricht",
+    "nameError": "Name ist erforderlich.",
+    "emailError": "E-Mail ist erforderlich.",
+    "messageError": "Nachricht ist erforderlich.",
+    "checkbox": "Ich stimme der Verarbeitung meiner Daten gemäß der",
+    "privacyPolicy": "Datenschutzerklärung",
+    "submit": "Sag Hallo :)",
+    "success": "Ich freue mich auf deine Nachricht"
+  },
+  "work": {
+    "title": "Meine Priojekte",
+    "description": "Entdecke eine Auswahl meiner Projekte – Teste sie direkt und sieh meine Skills in Aktion, um meine Fähigkeiten in Aktion zu sehen."
+  },
+  "join": {
+    "title": "Join",
+    "tech": "HTML | CSS | Firebase",
+    "description": "Task-Manager nach dem Kanban-Prinzip. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Aufgaben Nutzern & Kategorien zu.",
+    "live": "Live testen",
+    "github": "Github"
+  },
+  "pokedex": {
+    "title": "Pokédex",
+    "tech": "JavaScript | HTML | API",
+    "description": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen liefert & ordnet.",
+    "live": "Live-Demo"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "tech": "Angular | HTML | CSS",
+    "description": "Eine persönliche Portfolio-Website mit Angular, die meine Projekte, Fähigkeiten und Erfahrungen als Webentwicklerin präsentiert. Gestaltet mit responsivem Layout und modernem Design.",
+    "live": "Live-Demo"
+  },
+  "sharky": {
+    "title": "Sharky",
+    "tech": "JavaScript | HTML | CSS",
+    "description": "„Jump, Run and Throw“-Spiel auf objektorientierter Basis. Hilf Sharky, Münzen & Tränke zu sammeln, um gegen den gefährlichen Orca zu kämpfen.",
+    "live": "Live-Demo"
+  },
+  "recommendation": {
+    "headline": "Teamplayer gesucht?",
+    "subheadline": "Das sagen Kolleg:innen über mich",
+    "testimonials": [
+      {
+        "name": "Max Name",
+        "project": "Firma / Projekt",
+        "quote": "Kurzes Zitat, das meine Soft Skills hervorhebt."
+      },
+      {
+        "name": "Max Name",
+        "project": "Firma / Projekt",
+        "quote": "Ein weiteres Beispiel für ein positives Testimonial."
+      },
+      {
+        "name": "Simon Heistermann",
+        "project": "Developer Academy | Join",
+        "quote": "Jana arbeitet strukturiert, zuverlässig und mit viel Feingefühl. Ihre ruhige und klare Kommunikation sowie ihr Organisationstalent haben unser Projekt wesentlich vorangebracht. Die Zusammenarbeit war jederzeit angenehm, effektiv und vor allem erfolgreich. Ich kann Jana uneingeschränkt weiterempfehlen!"
+      }
+    ]
+  },
+  "footer": {
+    "legal": "Impressum"
+  },
+
+  "legal": {
+    "title": "Impressum",
+    "section1": {
+      "title": "Angaben gemäß § 5 TMG",
+      "responsible": "Verantwortlich für den Inhalt nach § 5 TMG: Jana Schüler"
+    },
+    "email": "E-Mail",
+    "section2": {
+      "title": "Kontakt",
+      "text": "Bei Fragen erreichst du mich gerne per E-Mail:"
+    },
+    "section3": {
+      "title": "Haftungsausschluss",
+      "text": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt..."
+    },
+    "section4": {
+      "title": "Urheberrecht",
+      "text": "Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem deutschen Urheberrecht..."
+    },
+    "section5": {
+      "title": "Datenschutzerklärung",
+      "intro": "Der Schutz Ihrer persönlichen Daten ist mir wichtig...",
+      "responsibleEntity": "Verantwortliche Stelle",
+      "purpose": "Zweck der Datenerhebung",
+      "purposeText": "Die erhobenen Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet...",
+      "legalBasis": "Rechtsgrundlage",
+      "legalBasisText": "Die Datenverarbeitung erfolgt auf Grundlage Ihrer freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.",
+      "storage": "Speicherdauer",
+      "storageText": "Ihre Daten werden nur so lange gespeichert, wie es zur Bearbeitung Ihrer Anfrage erforderlich ist...",
+      "rights": "Ihre Rechte",
+      "rightsText": "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten...",
+      "ssl": "SSL-Verschlüsselung",
+      "sslText": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung...",
+      "consent": "Hinweis zur Einwilligung",
+      "consentText": "Mit dem Absenden des Kontaktformulars willigen Sie in die Verarbeitung der eingegebenen Daten zum Zweck der Kontaktaufnahme ein..."
+    },
+    "lastUpdate": "Letzte Aktualisierung: Juli 2025"
   }
 }

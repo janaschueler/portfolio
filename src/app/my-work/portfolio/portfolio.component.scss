@@ -6,9 +6,16 @@
   text-align: right;
 }
 
-@media (max-width: 550px) {
+.right {
+  justify-content: flex-end !important;
+}
+
+@media (max-width: 768px) {
   .content-container {
     align-items: center;
     text-align: center;
+  }
+  .button-container {
+    justify-content: flex-end;
   }
 }
