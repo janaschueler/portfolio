@@ -18,7 +18,7 @@
   "about": {
     "headline1": "Let's work together",
     "headline2": "Ich bin...",
-    "location": "Standort in Münster",
+    "location": "ansässig in Münster",
     "remote": "offen für Remote-Arbeit",
     "travel": "offen für Reisen",
     "introText": "... begeistert von Webentwicklung, kombiniere Logik und Kreativität, um nutzerfreundliche Lösungen zu bauen.\n\nIch lerne gerne neue Technologien wie Angular und responsive Design, um mich stetig weiterzuentwickeln.\n\nIch gehe Herausforderungen analytisch an und arbeite gerne in agilen, kollaborativen Teams.",
@@ -73,6 +73,8 @@
   "recommendation": {
     "headline": "Teamplayer gesucht?",
     "subheadline": "Das sagen Kolleg:innen über mich",
+    "more": "… mehr",
+    "less": "weniger",
     "testimonials": [
       {
         "name": "Max Name",
@@ -80,9 +82,9 @@
         "quote": "Kurzes Zitat, das meine Soft Skills hervorhebt."
       },
       {
-        "name": "Max Name",
-        "project": "Firma / Projekt",
-        "quote": "Ein weiteres Beispiel für ein positives Testimonial."
+        "name": "Jana Neuholz",
+        "project": "Scholz & Friends | Opel",
+        "quote": "Jana bringt nicht nur ein hohes Maß an Teamgeist mit, sondern überzeugt auch durch ihre strukturierte und lösungsorientierte Arbeitsweise. Selbst in stressigen Situationen bewahrt sie stets einen kühlen Kopf und verliert nie den Blick für das Wesentliche. Ihre positive Ausstrahlung und Professionalität machen sie zu einer echten Bereicherung für jedes Team."
       },
       {
         "name": "Simon Heistermann",
@@ -92,44 +94,46 @@
     ]
   },
   "footer": {
-    "legal": "Impressum"
+    "legal": "Impressum",
+    "privacy": "Datenschutzerklärung"    
   },
 
   "legal": {
     "title": "Impressum",
     "section1": {
-      "title": "Angaben gemäß § 5 TMG",
+      "title": "Angaben gemäß § 5 des Telemediengesetzes (TMG)",
       "responsible": "Verantwortlich für den Inhalt nach § 5 TMG: Jana Schüler"
     },
     "email": "E-Mail",
     "section2": {
       "title": "Kontakt",
-      "text": "Bei Fragen erreichst du mich gerne per E-Mail:"
+      "text": "Wenn du Fragen oder Anmerkungen zu dieser Website hast, kannst du mich gerne per E-Mail kontaktieren:"
     },
     "section3": {
       "title": "Haftungsausschluss",
-      "text": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt..."
+      "text": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. Gemäß § 7 Abs. 1 TMG bin ich für eigene Inhalte auf dieser Seite nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
     },
     "section4": {
       "title": "Urheberrecht",
-      "text": "Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem deutschen Urheberrecht..."
+      "text": "Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der jeweiligen Autorin bzw. Erstellerin."
     },
     "section5": {
       "title": "Datenschutzerklärung",
-      "intro": "Der Schutz Ihrer persönlichen Daten ist mir wichtig...",
+      "intro": "Der Schutz Ihrer personenbezogenen Daten ist mir wichtig. Ich behandle Ihre personenbezogenen Informationen vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
       "responsibleEntity": "Verantwortliche Stelle",
+      "responsibleEntityText": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:\n\nJana [Dein Nachname]\n[Deine Adresse]\n[Deine E-Mail-Adresse]\n[Telefonnummer falls gewünscht]",
       "purpose": "Zweck der Datenerhebung",
-      "purposeText": "Die erhobenen Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet...",
+      "purposeText": "Wenn Sie das Kontaktformular verwenden, werden Ihr Name, Ihre E-Mail-Adresse und Ihre Nachricht ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage erhoben. Diese Daten werden nicht für Werbezwecke verwendet und nicht an Dritte weitergegeben.",
       "legalBasis": "Rechtsgrundlage",
-      "legalBasisText": "Die Datenverarbeitung erfolgt auf Grundlage Ihrer freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.",
+      "legalBasisText": "Die Datenverarbeitung erfolgt auf Grundlage Ihrer freiwillig erteilten Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, indem Sie eine entsprechende Nachricht an die verantwortliche Stelle senden.",
       "storage": "Speicherdauer",
-      "storageText": "Ihre Daten werden nur so lange gespeichert, wie es zur Bearbeitung Ihrer Anfrage erforderlich ist...",
+      "storageText": "Ihre Daten werden nur so lange gespeichert, wie dies zur Bearbeitung Ihrer Anfrage erforderlich ist und gemäß gesetzlicher Aufbewahrungspflichten. Danach werden sie sicher gelöscht.",
       "rights": "Ihre Rechte",
-      "rightsText": "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten...",
+      "rightsText": "Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten sowie das Recht auf Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen die Verarbeitung. Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.",
       "ssl": "SSL-Verschlüsselung",
-      "sslText": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung...",
+      "sslText": "Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen über das Kontaktformular, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile Ihres Browsers mit \\\"https://\\\" beginnt.",
       "consent": "Hinweis zur Einwilligung",
-      "consentText": "Mit dem Absenden des Kontaktformulars willigen Sie in die Verarbeitung der eingegebenen Daten zum Zweck der Kontaktaufnahme ein..."
+      "consentText": "Durch das Absenden des Kontaktformulars willigen Sie in die Verarbeitung Ihrer personenbezogenen Daten (Name, E-Mail-Adresse, Nachricht) zum Zweck der Bearbeitung Ihrer Anfrage ein. Diese Einwilligung ist freiwillig und kann jederzeit widerrufen werden."
     },
     "lastUpdate": "Letzte Aktualisierung: Juli 2025"
   }

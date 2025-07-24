@@ -1,5 +1,5 @@
 import { MatSelectModule } from '@angular/material/select';
-import { Component, inject, PLATFORM_ID, signal } from '@angular/core';
+import { Component, inject, PLATFORM_ID, signal, AfterViewInit } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormBuilder, FormControl, FormsModule, ReactiveFormsModule, Validators, FormGroupDirective, NgForm } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-
+declare const AOS: any;
 /**
  * Standalone Angular Contact component.
  *
@@ -31,7 +31,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {
+export class ContactComponent implements AfterViewInit {
   readonly email = new FormControl('', [Validators.required, Validators.email]);
   emailSent = false;
   errorMessage = signal('');
@@ -167,5 +167,12 @@ export class ContactComponent {
       message: ['', Validators.required],
       accept: [false, Validators.requiredTrue],
     });
+  }
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 0);
   }
 }

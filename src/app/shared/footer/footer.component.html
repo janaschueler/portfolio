@@ -5,7 +5,10 @@
 
   <div class="distribution-container">
     <span>©Jana Schüler 2025</span>
-    <a class="desktop-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
+    <div class="legal-links">
+      <a class="desktop-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
+      <a class="desktop-only" routerLink="/privacy">{{ "footer.privacy" | translate }}</a>
+    </div>
   </div>
 
   <div class="sm-icons">
@@ -19,6 +22,8 @@
       <img src="assets/icons/linkedIn_white.svg" alt="icon-linkedin" />
     </a>
   </div>
-
-  <a class="mobile-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
+  <div *ngIf="isMobile" class="legal-links mobile-only">
+    <a *ngIf="isMobile" class="mobile-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
+    <a *ngIf="isMobile" class="mobile-only" routerLink="/privacy">{{ "footer.privacy" | translate }}</a>
+  </div>
 </footer>

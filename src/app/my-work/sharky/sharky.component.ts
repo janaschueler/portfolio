@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
+declare const AOS: any;
 /**
  * Standalone component for the Sharky feature.
  * Uses translation module for internationalization.
@@ -12,4 +12,12 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './sharky.component.html',
   styleUrl: './sharky.component.scss',
 })
-export class SharkyComponent {}
+export class SharkyComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 0);
+  }
+}

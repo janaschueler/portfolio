@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+
+declare const AOS: any;
 
 /**
  * Component for the "Join" section of the application.
@@ -12,4 +14,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './join.component.html',
   styleUrl: './join.component.scss',
 })
-export class JoinComponent {}
+export class JoinComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      if (AOS) AOS.refresh();
+    }, 0);
+  }
+}

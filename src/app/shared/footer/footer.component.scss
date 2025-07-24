@@ -1,5 +1,5 @@
 .footer-container {
-  height: 200px;
+  height: 240px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,25 +22,6 @@
   > span {
     font-size: 23px;
   }
-  > a {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  > a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    width: 25%;
-    height: 2px;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  > a:hover::after {
-    opacity: 1;
-  }
 }
 
 .sm-icons {
@@ -52,6 +33,40 @@
   > img {
     width: 30px;
     filter: invert(1);
+  }
+}
+
+.legal-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  font-size: 16px;
+
+  a {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 0px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      width: 50%;
+      height: 2px;
+      background-color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
   }
 }
 
@@ -82,4 +97,9 @@
       opacity: 1;
     }
   }
+
+  .legal-links {
+  flex-direction: column;
+  gap: 8px;
+}
 }

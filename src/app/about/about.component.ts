@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
+declare const AOS: any;
 /**
  * Standalone About component with translation support.
  * Displays static information about the application.
@@ -14,4 +14,12 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
-export class AboutComponent {}
+export class AboutComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 0);
+  }
+}

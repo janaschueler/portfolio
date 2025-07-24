@@ -5,19 +5,18 @@
     <img class="ellipse-3" src="assets/bubble/work-ellipse3.png" alt="blue ellipse" />
     <img class="ellipse-4" src="assets/bubble/work-ellipse4.png" alt="blue ellipse" />
     <img class="ellipse-5 desktop-only" src="assets/bubble/work-ellipse5.png" alt="blue ellipse" />
-    <img class="ellipse-6" src="assets/bubble/work-ellipse6.png" alt="blue ellipse" />
+    <img class="ellipse-6 desktop-only" src="assets/bubble/work-ellipse6.png" alt="blue ellipse" />
     <img class="ellipse-7" src="assets/bubble/work-ellipse7.png" alt="blue ellipse" />
   </div>
 
-  <div class="introduction-container">
-    <h1>{{ "work.title" | translate }}</h1>
-    <span>{{ "work.description" | translate }}</span>
-  </div>
-
-  <div class="work-sample-container">
+  <div data-aos="fade-left" data-aos-duration="800" data-aos="fade-left" data-aos-duration="800" class="work-sample-container">
+    <div class="introduction-container">
+      <h1>{{ "work.title" | translate }}</h1>
+      <span>{{ "work.description" | translate }}</span>
+    </div>
     <app-join></app-join>
     <app-sharky></app-sharky>
     <app-pokedex></app-pokedex>
-    <app-portfolio></app-portfolio>
+    <!-- <app-portfolio></app-portfolio> -->
   </div>
 </div>

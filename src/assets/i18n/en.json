@@ -18,7 +18,7 @@
   "about": {
     "headline1": "Let's work together",
     "headline2": "I am...",
-    "location": "location in Münster",
+    "location": "located in Münster",
     "remote": "open to work remote",
     "travel": "open to travel",
     "introText": "... passionate about web development, combining logic and creativity to build user-focused solutions.\n\nI enjoy learning new technologies like Angular and responsive design to continuously grow.\n\nI tackle challenges analytically and thrive in agile, collaborative teams.",
@@ -72,6 +72,8 @@
   "recommendation": {
     "headline": "Need a team player?",
     "subheadline": "What my colleagues say about me",
+    "more": "… more",
+    "less": "less",
     "testimonials": [
       {
         "name": "Max Name",
@@ -79,9 +81,9 @@
         "quote": "Short quote highlighting my soft skills."
       },
       {
-        "name": "Max Name",
-        "project": "Company / Project",
-        "quote": "Another example of a brief and positive testimonial."
+        "name": "Jana Neuholz",
+        "project": "Scholz & Friends",
+        "quote": "Jana not only demonstrates great team spirit, but also impresses with her structured and solution-oriented way to work. Even in stressful situations, she always stays focused on what really matters. Her positive attitude and professionalism make her a true asset to any team."
       },
       {
         "name": "Simon Heistermann",
@@ -91,44 +93,46 @@
     ]
   },
   "footer": {
-    "legal": "Legal Notice"
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy"    
   },
 
   "legal": {
     "title": "Legal Notice",
     "section1": {
-      "title": "Information pursuant to § 5 TMG",
-      "responsible": "Responsible for the content according to § 5 TMG: Jana Schüler"
+      "title": "Information pursuant to § 5 of the German Telemedia Act (TMG)",
+      "responsible": "Responsible for content according to § 5 TMG: Jana Schüler"
     },
     "email": "Email",
     "section2": {
       "title": "Contact",
-      "text": "If you have any questions or concerns, feel free to contact me via email at:"
+      "text": "If you have any questions or concerns regarding this website, feel free to contact me via email at:"
     },
     "section3": {
       "title": "Disclaimer",
-      "text": "The contents of this website have been created with the greatest possible care..."
+      "text": "The contents of this website have been created with the greatest possible care. However, I do not guarantee the accuracy, completeness, or timeliness of the content. According to § 7 para. 1 TMG, I am responsible for my own content on this website under general law. However, according to §§ 8 to 10 TMG, I am not obliged to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity."
     },
     "section4": {
       "title": "Copyright",
-      "text": "The content and works published on this website are subject to German copyright law..."
+      "text": "The content and works created by the site operator on this website are subject to German copyright law. Duplication, editing, distribution, and any kind of use beyond what is permitted under copyright law require the written consent of the author or creator."
     },
     "section5": {
       "title": "Privacy Policy",
-      "intro": "Protecting your personal data is important to me...",
+      "intro": "Protecting your personal data is important to me. I treat your personal information confidentially and in accordance with the statutory data protection regulations as well as this privacy policy.",
       "responsibleEntity": "Responsible Entity",
+      "responsibleEntityText": "The responsible entity for data processing on this website is:\n\nJana [Your Last Name]\n[Your Address]\n[Email Address]\n[Phone Number]",
       "purpose": "Purpose of Data Collection",
-      "purposeText": "The data collected is used exclusively to process your inquiry...",
+      "purposeText": "When you use the contact form, your name, email address, and message are collected solely for the purpose of responding to your inquiry. This data is not used for marketing or passed on to third parties.",
       "legalBasis": "Legal Basis",
-      "legalBasisText": "Data processing is based on your voluntary consent...",
+      "legalBasisText": "Data processing is based on your voluntary consent (Art. 6 para. 1 lit. a GDPR). You may revoke this consent at any time with future effect by sending a message to the responsible entity.",
       "storage": "Storage Duration",
-      "storageText": "Your data will be stored only as long as necessary...",
+      "storageText": "Your data will be stored only as long as necessary to process your inquiry and in accordance with legal obligations. Afterwards, it will be securely deleted.",
       "rights": "Your Rights",
-      "rightsText": "You have the right to obtain information about your stored personal data...",
+      "rightsText": "You have the right to obtain information about your stored personal data at any time, as well as the right to rectification, deletion, restriction of processing, data portability, and to object to the processing of your data. You may also lodge a complaint with the competent supervisory authority.",
       "ssl": "SSL Encryption",
-      "sslText": "This website uses SSL encryption for security reasons...",
+      "sslText": "This website uses SSL encryption for security reasons and to protect the transmission of confidential content, such as inquiries via the contact form. You can recognize an encrypted connection in your browser’s address line, which begins with \\\"https://\\\".",
       "consent": "Consent Notice",
-      "consentText": "By submitting the contact form, you consent to the processing..."
+      "consentText": "By submitting the contact form, you consent to the processing of your personal data (name, email address, and message) for the purpose of responding to your inquiry. This consent is voluntary and can be revoked at any time."
     },
     "lastUpdate": "Last updated: July 2025"
   }

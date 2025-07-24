@@ -1,15 +1,22 @@
-<div class="recommendation-container">
+<div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="recommendation-container">
   <h3>{{ "recommendation.headline" | translate }}</h3>
   <h4>{{ "recommendation.subheadline" | translate }}</h4>
 
   <div class="testimonial-container">
-    @for (t of testimonials; track t.name) {
-    <div class="testimonial-unit">
+    @for (t of testimonials; track t.name; let i = $index) {
+    <div class="testimonial-unit" [class.expanded]="expandedIndices[i]">
       <div class="testimonial-name">
         <h5>{{ t.name }}</h5>
         <span>{{ t.project }}</span>
       </div>
-      <p>"{{ t.quote }}"</p>
+      <p>
+        <span class="text" [class.clamp]="!expandedIndices[i]" #quoteRef> "{{ t.quote }}" </span>
+        <ng-container *ngIf="overflowing[i]">
+          <span class="toggle" (click)="toggleExpand(i)">
+            {{ expandedIndices[i] ? ("recommendation.less" | translate) : ("recommendation.more" | translate) }}
+          </span>
+        </ng-container>
+      </p>
     </div>
     }
   </div>

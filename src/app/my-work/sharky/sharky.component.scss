@@ -6,8 +6,9 @@
   text-align: right;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .content-container {
+    padding-right: 0;
     align-items: center;
     text-align: center;
   }

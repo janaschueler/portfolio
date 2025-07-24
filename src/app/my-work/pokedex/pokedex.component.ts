@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
+declare const AOS: any;
 /**
  * Component for displaying the Pokedex section of the application.
  */
@@ -11,4 +11,12 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './pokedex.component.html',
   styleUrl: './pokedex.component.scss',
 })
-export class PokedexComponent {}
+export class PokedexComponent implements AfterViewInit {
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 0);
+  }
+}

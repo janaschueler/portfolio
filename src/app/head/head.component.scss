@@ -6,10 +6,21 @@ $gradient-bg: linear-gradient(to bottom, #ffffff, #eaf0ff);
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+
   width: 100%;
   height: 100vh;
   background: $gradient-bg;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: min(100%, 1440px);
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .image-container {
@@ -23,7 +34,7 @@ $gradient-bg: linear-gradient(to bottom, #ffffff, #eaf0ff);
   .portrait {
     width: 150%;
     height: auto;
-    max-height: 100%;
+    max-height: 90%;
     object-fit: contain;
     pointer-events: none;
     z-index: 2;
@@ -31,14 +42,47 @@ $gradient-bg: linear-gradient(to bottom, #ffffff, #eaf0ff);
   }
 }
 
+// .content-container {
+//   width: 50%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0 32px;
+//   background-color: transparent;
+//   align-items: space-between;
+// }
+
 .content-container {
+  height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: center;
   padding: 0 32px;
   background-color: transparent;
+  align-items: space-between;
+  > div {
+    flex: 1;
+    max-height: 33.333%;
+  }
+}
+
+.content-container > .desktop-only,
+.content-container > .sm-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container > .headline {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 span {
@@ -49,16 +93,34 @@ span {
 .headline {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  padding: 2rem;
+  padding-left: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 64px;
 
-  .letter-spacing {
-    letter-spacing: 0.25rem;
+  > h1 {
+    line-height: 1.1;
   }
 
-  .margin-bottom {
-    margin-bottom: 16px;
+  > h1:nth-of-type(1) {
+    font-size: clamp(2rem, 10vw, 8rem);
+    margin-bottom: -20px !important;
   }
+
+  > h2 {
+    word-break: break-word;
+    hyphens: auto;
+  }
+}
+
+.letter-spacing {
+  letter-spacing: 0.25rem;
+}
+
+.margin-bottom {
+  margin-bottom: 16px;
 }
 
 .bubble-header {
@@ -72,47 +134,75 @@ span {
   z-index: 1;
 }
 
+.bubble-header-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .mt-120 {
-  height: 120px;
+  height: 80px;
   width: 100%;
   display: block;
   position: relative;
 }
 
 .sm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  height: 100%;
+  width: 100%;
+  > span {
+    margin-bottom: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+
+.line-icons-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   width: 100%;
+  position: relative;
+}
 
-  .vertical-line {
-    background-color: $primary-color;
-    width: 1px;
-    height: 160px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.vertical-line {
+  width: 2px;
+  background-color: $primary-color;
+  height: 100%;
+  z-index: 1;
+}
 
-  .sm-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: absolute;
-    right: 15%;
+.sm-icons {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
 
-    a {
-      display: inline-block;
+  a {
+    display: inline-block;
 
-      img {
-        width: 30px;
-        transition: transform 125ms ease;
+    img {
+      width: 30px;
+      transition: transform 125ms ease;
 
-        &:hover {
-          transform: translateX(-8px);
-        }
+      &:hover {
+        transform: translateX(-8px);
       }
     }
   }
@@ -124,11 +214,26 @@ span {
   right: 16px;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
+  gap: 40px;
+  width: 60px;
+  z-index: 20;
 
   > span {
     transform: rotate(90deg);
     letter-spacing: 2px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1500px) {
+  h2 {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 40px !important;
   }
 }
 
@@ -142,10 +247,14 @@ span {
   .portrait {
     width: 300px;
   }
+
+  h2 {
+    font-size: 32px !important;
+  }
 }
 
 @media (max-width: 768px) {
-  .head-container {
+  .main-container {
     flex-direction: column-reverse;
     justify-content: space-between;
   }
@@ -154,7 +263,6 @@ span {
     width: 100%;
     padding: 0 16px;
     align-items: stretch;
-    justify-content: flex-start;
     z-index: 10;
 
     h1,
@@ -172,16 +280,31 @@ span {
       font-size: 32px;
       margin-bottom: -4px !important;
     }
+
+    .mt-120 {
+      height: 120px;
+    }
+  }
+
+  .headline {
+    > h1 {
+      font-size: 72px !important
+      ;
+    }
   }
 
   .image-container {
-    width: 80%;
+    width: 100%;
+    height: 130%;
+    display: flex;
     justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
 
     .portrait {
-      width: 100%;
-      height: 100%;
-      margin-left: 0;
+      height: auto;
+      max-height: 100%;
+      width: auto;
     }
   }
 
@@ -190,6 +313,7 @@ span {
     padding: 0 !important;
     text-align: start;
     display: block !important;
+    margin-bottom: 0;
 
     > h1,
     h2 {
@@ -200,11 +324,6 @@ span {
   .bubble-header {
     width: 100%;
     height: auto;
-    max-width: 500px;
-  }
-
-  .vertical-line {
-    height: 100px;
   }
 }
 
@@ -237,30 +356,6 @@ span {
 
   h2 {
     margin-bottom: -8px !important;
-  }
-}
-
-@media (min-height: 600px) {
-  .vertical-line {
-    height: 150px;
-  }
-}
-
-@media (min-height: 768px) {
-  .vertical-line {
-    height: 140px;
-  }
-}
-
-@media (min-height: 900px) {
-  .vertical-line {
-    height: 400px;
-  }
-}
-
-@media (min-height: 1000px) {
-  .vertical-line {
-    height: 500px;
   }
 }
 

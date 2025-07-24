@@ -23,7 +23,8 @@ export class HeaderMobileComponent {
    * Switches the application's language.
    * @param lang The language code to switch to ('de' or 'en').
    */
-  switchLanguage(lang: 'de' | 'en') {
+  switchLanguage(lang: string): void {
     this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }
