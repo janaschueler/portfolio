@@ -59,6 +59,11 @@
   height: 100vh;
 }
 
+.mat-drawer {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
 .mobile-nav-list {
   display: flex;
   flex-direction: column;

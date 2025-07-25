@@ -21,6 +21,7 @@
   gap: 16px;
   > span {
     font-size: 23px;
+    text-align: center;
   }
 }
 
@@ -99,7 +100,7 @@
   }
 
   .legal-links {
-  flex-direction: column;
-  gap: 8px;
-}
+    flex-direction: column;
+    gap: 8px;
+  }
 }

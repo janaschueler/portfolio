@@ -42,7 +42,7 @@
 
           <mat-checkbox formControlName="accept" class="margin" [ngClass]="{ 'checkbox-error': form.get('accept')?.invalid && form.get('accept')?.touched }">
             {{ "contact.checkbox" | translate }}
-            <a class="no-design" [routerLink]="['/privacy']" [fragment]="'privacy-policy'" (click)="$event.stopPropagation()"> {{ "contact.privacyPolicy" | translate }} </a>*
+            <a class="no-design" [routerLink]="['/privacy']" [fragment]="'privacy-policy'"> {{ "contact.privacyPolicy" | translate }} </a>*
           </mat-checkbox>
 
           <div class="button-wrapper">

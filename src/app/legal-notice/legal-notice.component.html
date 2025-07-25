@@ -1,21 +1,23 @@
-<section class="legalPageContainer">
+<section id="legal-notice" class="legalPageContainer">
   <img class="bubble-header" src="assets/bubble/header-ellipse.png" alt="" />
 
   <h1>{{ "legal.title" | translate }}</h1>
   <h4>{{ "legal.section1.title" | translate }}</h4>
 
   <div class="spanLegalCopy">
-    <ul>
-      <li>Jana Schüler</li>
-      <li>Am Juffernbach 27</li>
-      <li>48157 Münster</li>
-      <li>
-        <p>
-          {{ "legal.email" | translate }}:
-          <a [href]="mailtoLink">{{ emailAddress }}</a>
-        </p>
-      </li>
-    </ul>
+    <address>
+      <ul>
+        <li>Jana Schüler</li>
+        <li>Am Juffernbach 27</li>
+        <li>48157 Münster</li>
+        <li>
+          <p>
+            {{ "legal.email" | translate }}:
+            <a [href]="mailtoLink">{{ emailAddress }}</a>
+          </p>
+        </li>
+      </ul>
+    </address>
     <p>{{ "legal.section1.responsible" | translate }}</p>
   </div>
 

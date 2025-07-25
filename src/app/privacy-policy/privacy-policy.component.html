@@ -1,17 +1,19 @@
-<section class="legalPageContainer">
+<section id="privacy-policy" class="legalPageContainer">
   <img class="bubble-header" src="assets/bubble/header-ellipse.png" alt="" />
 
-  <h1 id="privacy-policy">{{ "legal.section5.title" | translate }}</h1>
+  <h1>{{ "legal.section5.title" | translate }}</h1>
   <div class="spanLegalCopy">
     <p>{{ "legal.section5.intro" | translate }}</p>
 
     <h4>{{ "legal.section5.responsibleEntity" | translate }}</h4>
-    <p>
-      Jana Schüler<br />
-      Am Juffernbach 27<br />
-      48157 Münster<br />
-      <a [href]="mailtoLink">{{ emailAddress }}</a>
-    </p>
+    <address>
+      <p>
+        Jana Schüler<br />
+        Am Juffernbach 27<br />
+        48157 Münster<br />
+        <a [href]="mailtoLink">{{ emailAddress }}</a>
+      </p>
+    </address>
 
     <h4>{{ "legal.section5.purpose" | translate }}</h4>
     <p>{{ "legal.section5.purposeText" | translate }}</p>

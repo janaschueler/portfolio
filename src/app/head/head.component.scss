@@ -302,9 +302,7 @@ span {
     flex-direction: row;
 
     .portrait {
-      height: auto;
       max-height: 100%;
-      width: auto;
     }
   }
 
@@ -324,6 +322,21 @@ span {
   .bubble-header {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-height: 720px) and (max-width: 768px) {
+  .image-container {
+    height: 80%;
+  }
+}
+
+@media (max-height: 620px) and (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+  .mt-120 {
+    display: none;
   }
 }
 

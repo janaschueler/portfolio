@@ -5,9 +5,9 @@
     "work": "My work"
   },
   "mobileNav": {
-    "about": "Über mich",
-    "skillset": "Fähigkeiten",
-    "work": "Meine Arbeiten"
+    "about": "About me",
+    "skillset": "Skill set",
+    "work": "My work"
   },
   "head": {
     "scroll": "SCROLL",
@@ -94,7 +94,7 @@
   },
   "footer": {
     "legal": "Legal Notice",
-    "privacy": "Privacy Policy"    
+    "privacy": "Privacy Policy"
   },
 
   "legal": {
