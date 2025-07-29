@@ -4,25 +4,49 @@ $error: rgb(197, 72, 67);
 .legalPageContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  padding: 96px 64px 40px 64px;
+}
 
-  .bubble-header {
+.ellipse-container {
+  width: min(100%, 1440px);
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  min-height: 120px;
+
+  .ellipse-1 {
     width: 100%;
-    max-width: 150px;
+    max-width: 300px;
+    top: -100px;
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
   }
 }
 
+.bubble-header,
+.ellipse-container {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.bubble-container {
+  display: flex;
+  align-items: center;
+  width: min(100%, 1440px);
+  height: auto;
+  margin-top: -120px;
+}
+
+.main-container {
+  width: min(100%, 1440px);
+  padding: 0 64px;
+}
+
 h1 {
-  margin-top: 120px !important;
+  margin-top: 140px !important;
 }
 
 a {
@@ -40,16 +64,34 @@ a {
   }
 }
 
+.media-1500 {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .media-1500 {
+    display: flex;
+  }
+  .d_none {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  h1 {
-    font-size: 64px !important;
+  .main-container {
+    padding: 0 24px 64px 24px;
   }
 
-  .legalPageContainer {
-    padding: 96px 24px 64px 24px;
+  .bubble-container {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  h1 {
+    margin-top: 64px !important;
   }
 
   .legalPageContainer .bubble-header {
-    max-width: 40%;
+    max-width: 120px;
   }
 }

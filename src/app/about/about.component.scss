@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100%;
   min-width: 300px;
-  padding: 96px 0;
+  padding: 120px 64px;
 }
 
 .main-container {
@@ -22,7 +22,6 @@
   justify-content: space-between;
   width: 50%;
   height: 100%;
-  margin: 0 8%;
 }
 
 .headline-center {
@@ -48,6 +47,10 @@ h2 {
   text-align: center;
 }
 
+#about {
+  scroll-margin-top: -120 !important;
+}
+
 .preference-container {
   display: flex;
   flex-direction: row;
@@ -55,6 +58,7 @@ h2 {
   align-items: center;
   gap: 8px;
   margin-top: auto;
+  padding-right: 32px;
 }
 
 .preference-unit {
@@ -78,8 +82,8 @@ h2 {
 
 .icon,
 .travel-img {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-size: contain;
   background-repeat: no-repeat;
   transition: transform 125ms ease;
@@ -129,7 +133,6 @@ h2 {
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding-right: 8%;
   justify-content: space-between;
 }
 
@@ -161,6 +164,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .about-container {
+    padding: 120px 0px;
+  }
   .main-container {
     flex-direction: column;
     align-items: center;
@@ -185,6 +191,7 @@ h2 {
     align-items: center;
     width: 100%;
     margin: 0 0 32px 20%;
+    padding-right: 0px;
   }
 
   .preference-unit {

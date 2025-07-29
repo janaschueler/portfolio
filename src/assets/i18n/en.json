@@ -28,7 +28,8 @@
     "title": "Contact",
     "subtitle": "Got a problem to solve?",
     "text1": "I’m a frontend developer passionate about clean code, accessibility, and user-centered design. Let’s build something valuable together!",
-    "text2": "Need a frontend developer? Contact me!",
+    "text2": "Need a frontend developer?",
+    "text3": "Contact me!",
     "nameLabel": "Your name",
     "emailLabel": "Your email",
     "messageLabel": "Your message",
@@ -76,13 +77,13 @@
     "less": "less",
     "testimonials": [
       {
-        "name": "Max Name",
-        "project": "Company / Project",
-        "quote": "Short quote highlighting my soft skills."
+        "name": "Kim Sperling",
+        "project": "TRACK | BMW Motorcycle",
+        "quote": "Jana has a sharp sense for client needs and translates them into clear, actionable strategies. Her structured approach, communication strength, and genuine commitment build trust – both within teams and with clients."
       },
       {
         "name": "Jana Neuholz",
-        "project": "Scholz & Friends",
+        "project": "Scholz & Friends | Opel",
         "quote": "Jana not only demonstrates great team spirit, but also impresses with her structured and solution-oriented way to work. Even in stressful situations, she always stays focused on what really matters. Her positive attitude and professionalism make her a true asset to any team."
       },
       {

@@ -10,6 +10,11 @@
   justify-content: flex-end !important;
 }
 
+p {
+  font-size: clamp(1.5rem, 8vw, 24px) !important;
+  color: #5988ff;
+}
+
 @media (max-width: 768px) {
   .content-container {
     align-items: center;

@@ -1,29 +1,31 @@
 <footer class="footer-container">
-  <div class="logo-container">
-    <img src="assets/icons/logo.svg" alt="Logo" />
-  </div>
-
-  <div class="distribution-container">
-    <span>©Jana Schüler 2025</span>
-    <div class="legal-links">
-      <a class="desktop-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
-      <a class="desktop-only" routerLink="/privacy">{{ "footer.privacy" | translate }}</a>
+  <div class="main-container">
+    <div class="logo-container">
+      <img src="assets/icons/logo.svg" alt="Logo" />
     </div>
-  </div>
 
-  <div class="sm-icons">
-    <a href="https://github.com/janaschueler" target="_blank" rel="noopener noreferrer">
-      <img src="assets/icons/git_white_footer.svg" alt="icon-github" />
-    </a>
-    <a href="mailto:mail@janaschuelerhub.com?subject=Kontakt%20von%20Website&body=Hallo%20Jana,">
-      <img src="assets/icons/email_white.svg" alt="icon sent mail" />
-    </a>
-    <a href="https://www.linkedin.com/in/jana-sch%C3%BCler-31704667/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/icons/linkedIn_white.svg" alt="icon-linkedin" />
-    </a>
-  </div>
-  <div *ngIf="isMobile" class="legal-links mobile-only">
-    <a *ngIf="isMobile" class="mobile-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
-    <a *ngIf="isMobile" class="mobile-only" routerLink="/privacy">{{ "footer.privacy" | translate }}</a>
+    <div class="distribution-container">
+      <span>©Jana Schüler 2025</span>
+      <div class="legal-links">
+        <a class="desktop-only" routerLink="/legal">{{ "footer.legal" | translate }}</a>
+        <a class="desktop-only" routerLink="/privacy">{{ "footer.privacy" | translate }}</a>
+      </div>
+    </div>
+
+    <div class="sm-icons">
+      <a href="https://github.com/janaschueler" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/git_white_footer.svg" alt="icon-github" />
+      </a>
+      <a href="mailto:mail@janaschuelerhub.com?subject=Kontakt%20von%20Website&body=Hallo%20Jana,">
+        <img src="assets/icons/email_white.svg" alt="icon sent mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/jana-sch%C3%BCler-31704667/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/linkedIn_white.svg" alt="icon-linkedin" />
+      </a>
+    </div>
+    <div *ngIf="isMobile" class="legal-links mobile-only">
+      <a *ngIf="isMobile" class="mobile-only" routerLink="legal">{{ "footer.legal" | translate }}</a>
+      <a *ngIf="isMobile" class="mobile-only" routerLink="privacy">{{ "footer.privacy" | translate }}</a>
+    </div>
   </div>
 </footer>

@@ -4,6 +4,17 @@
   padding-left: 8%;
 }
 
+p {
+  font-size: clamp(1.5rem, 8vw, 24px) !important;
+  color: #5988ff;
+}
+
+span {
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding-bottom: 16px;
+}
+
 @media (max-width: 768px) {
   .content-container {
     padding-left: 0 !important;

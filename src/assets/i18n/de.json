@@ -29,7 +29,8 @@
     "title": "Kontakt",
     "subtitle": "Hast du ein Problem zu lösen?",
     "text1": "Als Frontend-Entwicklerin brenne ich für sauberen Code, Barrierefreiheit und nutzerzentriertes Design brennt. Lass uns gemeinsam etwas Wertvolles bauen!",
-    "text2": "Frontend-Entwicklerin gesucht? Kontaktiere mich!",
+    "text2": "Frontend-Entwicklerin gesucht?",
+    "text3": "Kontaktiere mich!",
     "nameLabel": "Dein Name",
     "emailLabel": "Deine E-Mail",
     "messageLabel": "Deine Nachricht",
@@ -77,9 +78,9 @@
     "less": "weniger",
     "testimonials": [
       {
-        "name": "Max Name",
-        "project": "Firma / Projekt",
-        "quote": "Kurzes Zitat, das meine Soft Skills hervorhebt."
+        "name": "Kim Sperling",
+        "project": "TRACK | BMW Motorrad",
+        "quote": "Jana hat ein ausgeprägtes Gespür für die Bedürfnisse von Kund:innen und übersetzt diese in klare, umsetzbare Strategien. Ihr strukturierter Ansatz, ihre Kommunikationsstärke und ihr echtes Engagement schaffen Vertrauen – sowohl im Team als auch bei den Kund:innen."
       },
       {
         "name": "Jana Neuholz",
@@ -95,7 +96,7 @@
   },
   "footer": {
     "legal": "Impressum",
-    "privacy": "Datenschutzerklärung"    
+    "privacy": "Datenschutzerklärung"
   },
 
   "legal": {

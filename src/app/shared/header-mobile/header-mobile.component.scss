@@ -44,6 +44,10 @@
   background-color: transparent !important;
 }
 
+.active {
+  font-weight: bold !important;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -88,7 +92,7 @@
 
 .close-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 100px;
 }

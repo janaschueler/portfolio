@@ -1,4 +1,12 @@
-<app-header class="desktop-only"></app-header>
+
+<ng-container *ngIf="currentRoute === 'home'">
+  <app-header class="desktop-only"></app-header>
+</ng-container>
+
+<ng-container *ngIf="currentRoute === 'legal' || currentRoute === 'privacy'">
+  <app-header-legal class="desktop-only"></app-header-legal>
+</ng-container>
+
 <app-header-mobile class="mobile-only"></app-header-mobile>
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer> </app-footer>

@@ -1,8 +1,8 @@
-<div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="recommendation-container">
-  <h3>{{ "recommendation.headline" | translate }}</h3>
-  <h4>{{ "recommendation.subheadline" | translate }}</h4>
+<div class="recommendation-container">
+  <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">{{ "recommendation.headline" | translate }}</h3>
+  <h4 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">{{ "recommendation.subheadline" | translate }}</h4>
 
-  <div class="testimonial-container">
+  <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" class="testimonial-container">
     @for (t of testimonials; track t.name; let i = $index) {
     <div class="testimonial-unit" [class.expanded]="expandedIndices[i]">
       <div class="testimonial-name">

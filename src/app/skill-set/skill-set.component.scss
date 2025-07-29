@@ -7,8 +7,7 @@
   width: 100%;
   height: auto;
   min-width: 300px;
-  padding-bottom: 48px;
-  padding-top: 48px;
+  padding: 64px 64px;
   align-items: center;
 }
 
@@ -49,6 +48,7 @@
     color: white;
     font-weight: 200;
     transition: font-weight 0.2s ease;
+    font-size: 16px;
   }
 
   &:hover > img.icon {
@@ -78,13 +78,22 @@ h1 {
   color: white !important;
   text-align: center;
   margin-bottom: 64px;
+  font-size: clamp(2rem, 8vw, 96px) !important;
 }
 
+// #skillset {
+//   scroll-margin-top: -110px;
+// }
+
 @media (max-width: 768px) {
+  .skill-container {
+    padding: 64px 8px;
+  }
   .icon-container {
-    gap: 24px !important;
+    gap: 32px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    width: 100%;
   }
   .icon-unit {
     gap: 8px;
@@ -94,7 +103,7 @@ h1 {
     > span {
       width: 80px;
       text-align: center;
-      font-size: 14px;
+      font-size: 14px !important;
     }
   }
 

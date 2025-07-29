@@ -1,16 +1,18 @@
-<div id="contact" class="contact-container">
+<div class="contact-container">
   <img class="ellipse-1" src="assets/bubble/contact-ellipse1.png" alt="blue ellipse" />
   <img class="ellipse-2 desktop-only" src="assets/bubble/contact-ellipse2.png" alt="blue ellipse" />
   <img class="ellipse-3" src="assets/bubble/contact-ellipse3.png" alt="blue ellipse" />
 
-  <div data-aos="fade-down" data-aos-duration="800" data-aos-delay="200" class="main-container">
+  <div id="contact" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200" class="main-container">
     <h1>{{ "contact.title" | translate }}</h1>
     <div class="content-container">
       <div class="description-container">
         <h3>{{ "contact.subtitle" | translate }}</h3>
         <p>{{ "contact.text1" | translate }}</p>
         <p class="blue">
-          <span>{{ "contact.text2" | translate }}</span>
+          <span
+            >{{ "contact.text2" | translate }} <b>{{ "contact.text3" | translate }}</b></span
+          >
         </p>
       </div>
 

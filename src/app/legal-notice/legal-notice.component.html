@@ -1,45 +1,51 @@
 <section id="legal-notice" class="legalPageContainer">
-  <img class="bubble-header" src="assets/bubble/header-ellipse.png" alt="" />
-
-  <h1>{{ "legal.title" | translate }}</h1>
-  <h4>{{ "legal.section1.title" | translate }}</h4>
-
-  <div class="spanLegalCopy">
-    <address>
-      <ul>
-        <li>Jana Schüler</li>
-        <li>Am Juffernbach 27</li>
-        <li>48157 Münster</li>
-        <li>
-          <p>
-            {{ "legal.email" | translate }}:
-            <a [href]="mailtoLink">{{ emailAddress }}</a>
-          </p>
-        </li>
-      </ul>
-    </address>
-    <p>{{ "legal.section1.responsible" | translate }}</p>
+  <div class="bubble-container">
+    <img class="bubble-header d_none" src="assets/bubble/header-ellipse.png" alt="" />
+    <div class="ellipse-container">
+      <img class="ellipse-1 media-1500" src="assets/bubble/about-ellipse1.png" alt="" />
+    </div>
   </div>
+  <div class="main-container">
+    <h1>{{ "legal.title" | translate }}</h1>
+    <h4>{{ "legal.section1.title" | translate }}</h4>
 
-  <h4>{{ "legal.section2.title" | translate }}</h4>
-  <div class="spanLegalCopy">
-    <p>
-      {{ "legal.section2.text" | translate }}
-      <a [href]="mailtoLink">{{ emailAddress }}</a>
-    </p>
-  </div>
+    <div class="spanLegalCopy">
+      <address>
+        <ul>
+          <li>Jana Schüler</li>
+          <li>Am Juffernbach 27</li>
+          <li>48157 Münster</li>
+          <li>
+            <p>
+              {{ "legal.email" | translate }}:
+              <a [href]="mailtoLink">{{ emailAddress }}</a>
+            </p>
+          </li>
+        </ul>
+      </address>
+      <p>{{ "legal.section1.responsible" | translate }}</p>
+    </div>
 
-  <h4>{{ "legal.section3.title" | translate }}</h4>
-  <div class="spanLegalCopy">
-    <p>{{ "legal.section3.text" | translate }}</p>
-  </div>
+    <h4>{{ "legal.section2.title" | translate }}</h4>
+    <div class="spanLegalCopy">
+      <p>
+        {{ "legal.section2.text" | translate }}
+        <a [href]="mailtoLink">{{ emailAddress }}</a>
+      </p>
+    </div>
 
-  <h4>{{ "legal.section4.title" | translate }}</h4>
-  <div class="spanLegalCopy">
-    <p>{{ "legal.section4.text" | translate }}</p>
-  </div>
+    <h4>{{ "legal.section3.title" | translate }}</h4>
+    <div class="spanLegalCopy">
+      <p>{{ "legal.section3.text" | translate }}</p>
+    </div>
 
-  <div class="spanLegalCopy">
-    <p>{{ "legal.lastUpdate" | translate }}</p>
+    <h4>{{ "legal.section4.title" | translate }}</h4>
+    <div class="spanLegalCopy">
+      <p>{{ "legal.section4.text" | translate }}</p>
+    </div>
+
+    <div class="spanLegalCopy">
+      <p>{{ "legal.lastUpdate" | translate }}</p>
+    </div>
   </div>
 </section>

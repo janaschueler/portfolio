@@ -5,10 +5,10 @@
   position: relative;
   overflow: hidden;
   height: auto;
-  padding: 120px 64px;
   background: linear-gradient(to bottom, #ffffff, #eaf0ff);
   justify-content: center;
   align-items: center;
+  padding: 120px 64px;
 }
 
 .main-container {
@@ -44,8 +44,13 @@
   width: 100%;
 }
 
-h1 {
-  font-size: 64px;
+h3 {
+  font-size: 32px !important;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .blue {
@@ -87,7 +92,7 @@ button.btn:disabled {
 .btn-container {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: min(100%, 1440px);
 }
 
 .mat-form-field {
@@ -211,15 +216,15 @@ button.btn:disabled {
 @media (max-width: 1200px) {
   .ellipse-2 {
     left: 40%;
+  }
 }
-}
-
 
 @media (max-width: 768px) {
+  h3 {
+    font-size: 24px !important;
+  }
   .contact-container {
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 32px;
+    padding: 120px 16px;
   }
 
   .main-container {
@@ -252,5 +257,11 @@ button.btn:disabled {
   .btn-container {
     margin-top: 96px;
     margin-bottom: 32px;
+  }
+
+  .mat-display-large,
+  .mat-typography .mat-display-large,
+  .mat-typography h1 {
+    margin: 0 0 0em;
   }
 }

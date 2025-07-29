@@ -14,6 +14,7 @@ import { ContactComponent } from '../contact/contact.component';
   selector: 'app-home',
   standalone: true,
   template: `
+
     <app-head></app-head>
     <app-about></app-about>
     <app-skill-set></app-skill-set>

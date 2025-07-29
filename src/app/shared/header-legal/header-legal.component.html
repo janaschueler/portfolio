@@ -7,9 +7,6 @@
     </div>
     <div class="nav-container">
       <button mat-icon-button class="menu-icon" aria-label="Menu icon"></button>
-      <a href="#about" (click)="setActive($event, '#about')">{{ "nav.about" | translate }}</a>
-      <a href="#skillset" (click)="setActive($event, '#skillset')">{{ "nav.skillset" | translate }}</a>
-      <a href="#work" (click)="setActive($event, '#work')">{{ "nav.work" | translate }}</a>
 
       <div class="language-switch">
         <a (click)="switchLanguage('de')" [ngClass]="{ active: currentLang === 'de' }">DE</a>

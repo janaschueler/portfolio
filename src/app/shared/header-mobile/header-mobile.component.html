@@ -2,6 +2,9 @@
   <mat-sidenav #sidenav mode="over" class="mobile-side-nav-content">
     <div class="sidenav-layout">
       <div class="close-container">
+        <a (click)="navigateToStart(); sidenav.close()">
+          <img src="assets/icons/logo-blau.svg" alt="Logo" />
+        </a>
         <button class="close-btn" mat-icon-button (click)="sidenav.close()" aria-label="Close navigation"></button>
       </div>
 
@@ -10,9 +13,9 @@
         <a href="#skillset" (click)="sidenav.close()">{{ "mobileNav.skillset" | translate }}</a>
         <a href="#work" (click)="sidenav.close()">{{ "mobileNav.work" | translate }}</a>
         <div class="language-switcher">
-          <a (click)="switchLanguage('de'); sidenav.close()">DE</a>
+          <a (click)="switchLanguage('de'); sidenav.close()" [ngClass]="{ active: currentLang === 'de' }">DE</a>
           <span>/</span>
-          <a (click)="switchLanguage('en'); sidenav.close()">EN</a>
+          <a (click)="switchLanguage('en'); sidenav.close()" [ngClass]="{ active: currentLang === 'en' }">EN</a>
         </div>
       </div>
       <div></div>
@@ -22,7 +25,9 @@
   <mat-sidenav-content>
     <mat-toolbar>
       <div class="logo-container">
-        <a href="#start"> <img src="assets/icons/logo.svg" alt="Logo" /></a>
+        <a (click)="navigateToStart(); sidenav.close()">
+          <img src="assets/icons/logo.svg" alt="Logo" />
+        </a>
       </div>
       <button mat-icon-button (click)="sidenav.toggle()" aria-label="Open navigation">
         <img src="assets/icons/burger-menu.png" alt="burger menu" />
